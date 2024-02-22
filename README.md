@@ -1,23 +1,25 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de uma Aplicação Interativa`
 
-`SEMESTRE`
+`Eixo 2`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+A aplicação desenvolvida simplifica a criação de tabelas nutricionais para fornecedores de alimentos. Os usuários inserem informações dos ingredientes, e o aplicativo gera automaticamente a tabela nutricional do produto, garantindo rapidez, precisão e conformidade com as regulamentações vigentes. Essa solução promove transparência e confiança junto aos consumidores.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Aldrin Taylor C. Bittencourt
+* Cesar Augusto Lima dos Santos
+* Helbert Miranda Benício
+* Jefferson Wagner S. Silva
+* Júlia Berto Rosa
+* Luan César Souza dos Santos
 
 ## Orientador
 
-* Nome completo do professor 1
+* Neil Paiva Tizzo
 
 ## Instruções de utilização
 
