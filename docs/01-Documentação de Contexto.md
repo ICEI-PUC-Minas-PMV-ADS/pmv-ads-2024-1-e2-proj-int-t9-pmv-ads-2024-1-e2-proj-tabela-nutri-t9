@@ -1,18 +1,9 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+A aplicação simplifica a criação de tabelas nutricionais para fornecedores de alimentos. Os usuários inserem as quantidades dos ingredientes, e o aplicativo gera automaticamente a tabela nutricional do produto, garantindo rapidez, precisão e conformidade com regulamentações. Uma solução eficaz para promover transparência e confiança junto aos consumidores.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+A falta de uma ferramenta eficaz para criar tabelas nutricionais, em conformidade com a Nova Rotulagem Nutricional, gera a negligência por parte da indústria e onde geram a desinformação por parte dos consumidores.
 
 ## Objetivos
 
@@ -22,8 +13,8 @@ Desenvolver uma aplicação que simplifica e agiliza o processo de criação de 
 
 **Objetivos Específicos:**
 
-* Agilizar o processo de criação de tabelas nutricionais, permitindo que os fornecedores de alimentos gerem rapidamente informações precisas sobre o conteúdo nutricional de seus produtos, reduzindo significativamente o tempo necessário para essa tarefa. 
- 
+* Agilizar o processo de criação de tabelas nutricionais, permitindo que os fornecedores de alimentos gerem rapidamente informações precisas sobre o conteúdo nutricional de seus produtos, reduzindo significativamente o tempo necessário para essa tarefa.
+  
 * Garantir a conformidade com as regulamentações vigentes ao automatizar a geração das tabelas nutricionais, fornecendo aos usuários uma ferramenta confiável para criar e manter registros nutricionais precisos, minimizando o risco de não conformidade e potenciais penalidades legais.
 
 
