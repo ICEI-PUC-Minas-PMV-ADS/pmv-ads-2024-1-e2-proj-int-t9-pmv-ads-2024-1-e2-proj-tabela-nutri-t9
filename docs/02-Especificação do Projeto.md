@@ -8,9 +8,22 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+1. Nutrição Brasil - Fornecedor de Alimentos:
+Nutrição Brasil, fornecedora de alimentos para todo o país, busca um sistema que o auxilie na atualização do modelo de tabela nutricional de seus produtos. Sua necessidade é homologar e fornecer essas informações tendo compliance ao padrão exigido pela Anvisa nos rótulos, garantindo a conformidade e transparência para os consumidores.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+2. Maria Saborosa - Comerciante de Comidas Caseiras:
+Maria é uma comerciante de comidas caseiras que procura uma ferramenta que lhe permita encontrar rapidamente as informações nutricionais de diferentes marcas. Sua intenção é criar e consultar esses dados para informar seus clientes sobre calorias e nutrientes de seus preparos de forma mais fácil e precisa, fortalecendo a confiança e transparência em sua relação com eles.
+
+3. João Delícias - Comerciante de Comidas Caseiras:
+João, também comerciante de comidas caseiras, deseja acessar as informações nutricionais que ele mesmo criou anteriormente para seus produtos. Ele busca manter um histórico dos registros para ser capaz, sempre que necessário, de enviar esses dados aos clientes e gerar novamente o rótulo de receitas antigas. Desta forma, poderá prestar um serviço personalizado ao seus clientes sem perder tempo tendo de dar entrada nos registros mais de uma vez.
+
+4. Dra. Ana Nutrição - Nutricionista:
+A Dra. Ana, uma nutricionista que procura uma solução que simplifique o processo de cálculo nutricional de alimentos. Sua meta é otimizar o tempo gasto em tarefas repetitivas, permitindo que ela se concentre mais na elaboração de dietas personalizadas e ofereça um serviço mais eficiente e de qualidade aos seus clientes. Para isso necessita de um sistema que automatize o cálculo de tabelas nutricionais.
+
+5. Dr. Pedro Nutrição - Nutricionista:
+O Dr. Pedro, nutricionista de uma grande empresa, tem o objetivo de ranquear a lista de ingredientes para informar os clientes sobre a quantidade relativa nos produtos alimentícios de sua empresa. Ele pretende criar uma lista de nutrientes alergênicos e alertar os clientes, contribuindo para uma orientação mais detalhada e segura sobre os alimentos consumidos. Seria de grande ajuda ao dr. Pedro um sistema que ranqueie os ingredientes de acordo com suas quantidades e também permita classificar produtos alergênicos de acordo com seu ingredientes.
+
+<!--Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
 > **Links Úteis**:
 > - [Rock Content](https://rockcontent.com/blog/personas/)
@@ -20,7 +33,7 @@ Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos 
 > - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
 > - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
 >
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.-->
 
 ## Histórias de Usuários
 
