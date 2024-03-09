@@ -1,0 +1,40 @@
+table {
+    width: 150mm;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+td {
+    border: 1px solid black;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    border: 1px solid black;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.nutri {
+    width: 10mm;
+}
+
+.cemg {
+    text-align: center;
+    width: 1.5mm;
+
+}
+
+.porcao {
+    text-align: center;
+    width: 1.5mm;
+
+}
+
+.vdr {
+    text-align: center;
+    width: 1.5mm;
+}
