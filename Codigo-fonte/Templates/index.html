@@ -1,101 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamplate Padrão</title>
+    <title>Informação Nutricional</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+        <h1>Informação Nutricional</h1>
+    </header>
+    <main>
+        <div class="tabela">
+            <section class="informacao">
+                <h2>INFORMAÇÃO NUTRICIONAL</h2>
+                <hr>
+                <ul>
+                    <li>
+                        <span>Porções por embalagem: <span>000 porções</span></span>
+                    </li>
+                    <li>
+                        <span>Porção: <span>000 g (medida caseira)</span></span>
+                    </li>
+                </ul>
+                <hr class="hr">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>100 g</th>
+                            <th>Porção</th>
+                            <th>%VD*</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td">Valor energético (kcal)</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td class="td">Carboidratos totais (g)</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td class="prima">Açúcares totais (g)</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td class="secon">Açúcares adicionados (g)</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td class="td">Proteinas (g)</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td class="td">Gorduras totais (g)</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td class="prima">Gorduras saturadas (g)</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td class="prima">Gorduras trans (g)</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td class="td">Fibra alimentar (g)</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td class="td">Sódio (mg)</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>* Percentual de valores diários fornecidos pela porção.</p>
+            </section>
+        </div>
 
-    <div>
-        <table>
-            <caption>
-                <font size="5"><b>INFORMAÇÃO NUTRICIONAL</b></font>
-            </caption>
-            <thead>
-                <tr>
-                    <th class="nutri"></th>
-                    <th class="cemg">100g</th>
-                    <th class="porcao">Porção</th>
-                    <th class="vdr">%VD*</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="nutri">Valor energético (Kcal)</td>
-                    <td class="cemg">100 kcal</td>
-                    <td class="porcao">100 kcal</td>
-                    <td class="vdr">5%</td>
-                </tr>
-                <tr>
-                    <td class="nutri">Carboidratos (g)</td>
-                    <td class="cemg">20 g</td>
-                    <td class="porcao">20 g</td>
-                    <td class="vdr">7%</td>
-                <tr>
-                    <td class="nutri">Açúcares totais (g)</td>
-                    <td class="cemg">20 g</td>
-                    <td class="porcao">20 g</td>
-                    <td class="vdr">7%</td>
-                </tr>
-                <tr>
-                    <td class="nutri">Açúcares adicionados (g)</td>
-                    <td class="cemg">20 g</td>
-                    <td class="porcao">20 g</td>
-                    <td class="vdr">7%</td>
-                </tr>
-                <tr>
-                    <td class="nutri">Proteínas (g)</td>
-                    <td class="cemg">20 g</td>
-                    <td class="porcao">20 g</td>
-                    <td class="vdr">7%</td>
-                </tr>
-                <tr>
-                    <td class="nutri">Gorduras Totais (g)</td>
-                    <td class="cemg">20 g</td>
-                    <td class="porcao">20 g</td>
-                    <td class="vdr">7%</td>
-                </tr>
-                <tr>
-                    <td class="nutri">Gorduras Saturadas (g)</td>
-                    <td class="cemg">20 g</td>
-                    <td class="porcao">20 g</td>
-                    <td class="vdr">7%</td>
-                </tr>
-                <tr>
-                    <td class="nutri">Gorduras Trans (g)</td>
-                    <td class="cemg">20 g</td>
-                    <td class="porcao">20 g</td>
-                    <td class="vdr">7%</td>
-                </tr>
-                <tr>
-                    <td class="nutri">Fibra Alimentar (g)</td>
-                    <td class="cemg">20 g</td>
-                    <td class="porcao">20 g</td>
-                    <td class="vdr">7%</td>
-                </tr>
-                <tr>
-                    <td class="nutri">Sódio (mg)</td>
-                    <td class="cemg">20 mg</td>
-                    <td class="porcao">20 mg</td>
-                    <td class="vdr">7%</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="4">
-                        <font size=2>*Percentual de valores diários fornecidos pela porção.</font>
-                    </td>
-                </tr>
-            </tfoot>
-        </table>
-    </div>
+        <div class="infoalto">
+            <div class="imagem">
+                colocar imagem da lupa
+            </div>
+            <div class="texto">
+                <p>ALTO EM:</p>
+                <ul>
+                    <li>AÇÚCAR ADICIONADO</li>
+                    <li>GORDURA SATURADA</li>
+                    <li>SÓDIO</li>
+                </ul>
+            </div>
+        </div>
 
 
-    <script src="script.js"></script>
+    </main>
 </body>
 
 </html>
