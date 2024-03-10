@@ -77,21 +77,21 @@ section.informacao p {
 
 .prima {
     display: flex;
-    justify-content:left;
+    justify-content: left;
     text-indent: 4.8mm;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .secon {
     display: flex;
-    justify-content:left;
+    justify-content: left;
     text-indent: 7.6mm;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .td {
     display: flex;
-    justify-content:left;
+    justify-content: left;
     text-indent: 2mm;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -104,49 +104,51 @@ section.informacao p {
 
 /*FORMATAÇÃO DOS INDICATIVOS DE ALTO EM:*/
 
+.alinharcentro {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
 .infoalto {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.imagem {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: transparent;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border: 2px solid #ccc;
-    margin-right: 20px;
+    padding: 5px;
+    border: solid 5px;
+    border-radius: 15px;
+    width: auto;
+    height: auto;
 }
 
 .imagem img {
-    width: 150px;
-    height: 150px;
-    margin: auto;
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
 }
 
 .texto {
     text-align: center;
-}
-
-.texto p {
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .texto ul {
     list-style: none;
-    padding: 0;
+    padding: 0px;
+    font-size: 1px;
 }
 
 .texto ul li {
-    font-size: 14px;
+    font-size: 20px;
+    word-wrap: break-word;
     margin-bottom: 5px;
-}
+    padding: 10px;
+    width: 180px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
 
-.texto p:first-child {
-    color: black;
-    font-size: 24px;
+
+
 }
