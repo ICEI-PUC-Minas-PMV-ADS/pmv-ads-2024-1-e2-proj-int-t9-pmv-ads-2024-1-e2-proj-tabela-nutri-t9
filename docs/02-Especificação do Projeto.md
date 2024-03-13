@@ -69,6 +69,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-005| A aplicação deve salvar a tabela no perfil do usuário que a construiu   | MÉDIA |
 |RF-006| A aplicação deve permitir a consulta das tabelas salvas pelo usuário no perfil   | MÉDIA |
 |RF-007| A aplicação deve permitir o download da tabela que o usuário construiu   | ALTA |
+|RF-008| A aplicação deve permitir fazer o cadastro do usuário, e o tornar obrigatório para acessar as funcionalidades   | ALTA |
+|RF-009| A aplicação deve permitir fazer o login do usuário, e o tornar obrigatório para acessar as funcionalidades   | ALTA |
+|RF-010| A aplicação deve permitir a troca de senha do usuário   | MÉDIA |
+|RF-011| A aplicação deve permitir a exclusão de conta do usuário   | BAIXA |
 
 ### Requisitos não Funcionais
 
@@ -100,14 +104,15 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
+|02| Não pode ser desenvolvido um módulo de backend        |
 
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+<!-- Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
 > **Links Úteis**:
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
 > - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
-
+-->
 ## Diagrama de Casos de Uso
 
 O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
