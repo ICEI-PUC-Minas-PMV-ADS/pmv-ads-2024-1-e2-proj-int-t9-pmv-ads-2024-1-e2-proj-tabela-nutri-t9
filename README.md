@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# NutriGenius
 
 `Análise e Desenvolvimento de Sistemas`
 
@@ -6,7 +6,7 @@
 
 `Eixo 2`
 
-A aplicação desenvolvida simplifica a criação de tabelas nutricionais para fornecedores de alimentos. Os usuários inserem informações dos ingredientes, e o aplicativo gera automaticamente a tabela nutricional do produto, garantindo rapidez, precisão e conformidade com as regulamentações vigentes. Essa solução promove transparência e confiança junto aos consumidores.
+O NutriGenius desenvolvido para simplificar a criação de tabelas nutricionais para fornecedores de alimentos. Os usuários inserem informações dos ingredientes, e o aplicativo gera automaticamente a tabela nutricional do produto, garantindo rapidez, precisão e conformidade com as regulamentações vigentes. Essa solução promove transparência e confiança junto aos consumidores.
 
 ## Integrantes
 
