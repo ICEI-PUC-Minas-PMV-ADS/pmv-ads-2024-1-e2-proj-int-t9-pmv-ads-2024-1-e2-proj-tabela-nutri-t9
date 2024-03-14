@@ -1,6 +1,6 @@
 # Introdução
 
-A aplicação simplifica a criação de tabelas nutricionais para fornecedores de alimentos. Os usuários inserem as quantidades dos ingredientes, e o aplicativo gera automaticamente a tabela nutricional do produto, garantindo rapidez, precisão e conformidade com regulamentações. Uma solução eficaz para promover transparência e confiança junto aos consumidores.
+O NutriGenius simplifica a criação de tabelas nutricionais para fornecedores de alimentos. Os usuários inserem as quantidades dos ingredientes, e o aplicativo gera automaticamente a tabela nutricional do produto, garantindo rapidez, precisão e conformidade com regulamentações. Uma solução eficaz para promover transparência e confiança junto aos consumidores.
 
 ## Problema
 A falta de uma ferramenta eficaz para criar tabelas nutricionais, em conformidade com a Nova Rotulagem Nutricional, gera a negligência por parte da indústria e onde geram a desinformação por parte dos consumidores.
