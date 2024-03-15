@@ -82,7 +82,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-002| A aplicação deve ter uma implementação de autenticação robusta para a proteção de contas |  ALTA | 
 |RNF-003| O sistema deve ser implantando em nuvem (Heroku, Azure,AWS) | BAIXA | 
 |RNF-004| O sistema deve funcionar nas versões recentes dos principais navegadores (Chrome, Firefox, Edge, Safari) |  ALTA | 
-|RNF-005| A aplicação deve ser intuitiva e ter um designer agradável | BAIXA | 
+|RNF-005| A aplicação deve ser intuitiva e ter um design agradável | BAIXA | 
 
 ## Restrições
 
