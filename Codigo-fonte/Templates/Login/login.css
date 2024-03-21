@@ -1,0 +1,11 @@
+html,body{
+    height: 100%;
+}
+
+.form-center{
+    max-width: 300px;
+    padding: 1rem;
+    background-color: aliceblue;
+    border-radius: 10px;
+
+}
