@@ -53,17 +53,14 @@ section.informacao table {
     border-spacing: 0px;
 }
 
-section.informacao table thead tr th {
+section.informacao table tbody tr td, th {
     border-bottom: 1px solid black;
-    padding: 2, 5px;
+    padding: 1mm;
     text-align: center;
 }
 
-section.informacao table tbody tr td {
-
-    border-bottom: 1px solid black;
-    padding: 1px;
-    text-align: center;
+section.informacao table tbody td:not(:last-child), th:not(:last-child) {    
+    border-right: 1px solid black; 
 }
 
 section.informacao p {
