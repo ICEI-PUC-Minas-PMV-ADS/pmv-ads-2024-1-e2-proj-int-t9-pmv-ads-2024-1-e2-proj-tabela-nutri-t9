@@ -25,8 +25,8 @@ main {
 section.informacao {
     border: 1px solid black;
     padding: 2mm;
-    width: 400px;
-    height: 380px;
+    width: auto;
+    height: auto;
 }
 
 section.informacao h2 {
@@ -53,46 +53,52 @@ section.informacao table {
     border-spacing: 0px;
 }
 
-section.informacao table thead tr th {
-    border: 1px solid black;
-    padding: 2, 5px;
+section.informacao table tbody tr td, th {
+    border-bottom: 1px solid black;
+    padding: 1mm;
     text-align: center;
 }
 
-section.informacao table tbody tr td {
-    border: 1px solid black;
-    padding: 1px;
-    text-align: center;
+section.informacao table tbody td:not(:last-child), th:not(:last-child) {    
+    border-right: 1px solid black; 
 }
 
 section.informacao p {
+    margin: 1px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
 
 .hr {
+    margin-bottom: 0px;
     height: 1mm;
+    background-color: black
+}
+
+.hr2 {
+    margin-top: 0px;
+    height: 0.5px;
     background-color: black;
 }
+
 
 .prima {
     display: flex;
     justify-content: left;
-    text-indent: 4.8mm;
+    text-indent: 2.8mm;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .secon {
     display: flex;
     justify-content: left;
-    text-indent: 7.6mm;
+    text-indent: 5.6mm;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .td {
     display: flex;
     justify-content: left;
-    text-indent: 2mm;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -148,7 +154,4 @@ section.informacao p {
     border-radius: 15px;
     color: white;
     background-color: black;
-
-
-
 }
