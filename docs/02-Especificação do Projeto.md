@@ -66,23 +66,23 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-002| A aplicação deve possuir um design modelo padrão de tabela nutricional atualizado   | ALTA |
 |RF-003| A aplicação deve classificar e escrever os ingredientes selecionados de acordo com a quantidade do maior para o menor em uma lista   | ALTA |
 |RF-004| A aplicação deve permitir a escolha da quantidade de ingredientes para escrever na tabela nutricional  | ALTA |
-|RF-005| A aplicação deve salvar a tabela no perfil do usuário que a construiu   | MÉDIA |
-|RF-006| A aplicação deve permitir a consulta das tabelas salvas pelo usuário no perfil   | MÉDIA |
-|RF-007| A aplicação deve permitir o download da tabela que o usuário construiu   | ALTA |
-|RF-008| A aplicação deve permitir fazer o cadastro do usuário, e o tornar obrigatório para acessar as funcionalidades   | ALTA |
-|RF-009| A aplicação deve permitir fazer o login do usuário, e o tornar obrigatório para acessar as funcionalidades   | ALTA |
-|RF-010| A aplicação deve permitir a troca de senha do usuário   | MÉDIA |
-|RF-011| A aplicação deve permitir a exclusão de conta do usuário   | BAIXA |
+|RF-005| A aplicação deve salvar a tabela no perfil do usuário que a construiu   | ALTA |
+|RF-006| A aplicação deve permitir a consulta das tabelas salvas pelo usuário no perfil   | ALTA |
+|RF-007| A aplicação deve permitir baixar em PDF a tabela que o usuário construiu   | ALTA |
+|RF-008| A aplicação deve permitir baixar em PDF o relatório com as tabelas já criadas pelo usuário   | ALTA |
+|RF-009| A aplicação deve permitir fazer o cadastro do usuário, e o tornar obrigatório para acessar as funcionalidades   | ALTA |
+|RF-010| A aplicação deve permitir fazer o login do usuário, e o tornar obrigatório para acessar as funcionalidades   | ALTA |
+|RF-011| A aplicação deve permitir a troca de senha do usuário   | MÉDIA |
+|RF-012| A aplicação deve permitir a exclusão de conta do usuário   | BAIXA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| A aplicação deve ser responsiva para diferentes dispositivos, como desktops, tablets e smartphones | ALTA | 
-|RNF-002| A aplicação deve ter uma implementação de autenticação robusta para a proteção de contas |  ALTA | 
-|RNF-003| O sistema deve ser implantando em nuvem (Heroku, Azure,AWS) | BAIXA | 
-|RNF-004| O sistema deve funcionar nas versões recentes dos principais navegadores (Chrome, Firefox, Edge, Safari) |  ALTA | 
-|RNF-005| A aplicação deve ser intuitiva e ter um design agradável | BAIXA | 
+|RNF-002| A aplicação deve ter uma implementação de autenticação robusta para a proteção de contas |  BAIXA | 
+|RNF-003| O sistema deve funcionar nas versões recentes dos principais navegadores (Chrome, Firefox, Edge, Safari) |  ALTA | 
+|RNF-004| A aplicação deve ser intuitiva e ter um designer agradável | ALTA | 
 
 ## Restrições
 
@@ -91,9 +91,11 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|02| O sistema deve ter um módulo de backend        |
 |03| A equipe não pode subcontratar o desenvolvimento do trabalho  |
 |04| Todos os membros do grupo devem ser responsáveis por cada parte do Trabalho  |
+|05| O sistema deve fornecer um relatório        |
+|06| O sistema deve ser implantando em nuvem Azure | 
 
 
 <!-- Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
