@@ -33,9 +33,14 @@ Para mais informações, consulte o microfundamento "Modelagem de Dados".
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+Para realização desse projeto usaremos as seguintes tecnologias:
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+- HTML
+- CSS
+- JavaScript
+- C# - ASP.NET
+- Framework Bootstrap
+- Banco de Dados - MySQL
 
 ## Hospedagem
 
