@@ -83,10 +83,10 @@ As ferramentas empregadas no projeto são:
 - **Ferramentas de comunicação:** Discord
 - **Ferramentas de desenho de tela:** Figma (wireframes)
 - **Ferramentas de fluxograma:** Heflo
-- **Ferramentas do diagrama de classes:** Draw.io
-- **Ferramentas do diagrama de Fluxo:** Draw.io
-- **Ferramentas do modelo entidade relacionamento:** Draw.io
-- **Ferramentas do projeto da base de dados:** Laragon
+- **Ferramentas do diagrama de classes:** lucidchart
+- **Ferramentas do diagrama de Fluxo:** lucidchart
+- **Ferramentas do modelo entidade relacionamento:** lucidchart
+- **Ferramentas do projeto da base de dados:** lucidchart
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
