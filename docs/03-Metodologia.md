@@ -79,14 +79,14 @@ O quadro kanban do grupo no GitHub está disponível no link https://github.com/
 As ferramentas empregadas no projeto são:
 
 - **Gerenciamento de Tarefas:** GitHub
-- **Editor de código:** Visual Code
-- **Ferramentas de comunicação:** Discord
-- **Ferramentas de desenho de tela:** Figma (wireframes)
-- **Ferramentas de fluxograma:** Heflo
-- **Ferramentas do diagrama de classes:** lucidchart
-- **Ferramentas do diagrama de Fluxo:** lucidchart
-- **Ferramentas do modelo entidade relacionamento:** lucidchart
-- **Ferramentas do projeto da base de dados:** lucidchart
+- **Editor de Código:** Visual Code
+- **Banco de Dados:** MySQL
+- **Ferramentas de Comunicação:** Discord
+- **Ferramentas de Desenho de Tela:** Figma (wireframes)
+- **Ferramentas de Fluxograma:** Heflo
+- **Ferramentas do Diagrama de Classes:** lucidchart
+- **Ferramentas do Modelo Entidade Relacionamento:** lucidchart
+- **Ferramentas do Projeto da Base de Dados:** lucidchart
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
