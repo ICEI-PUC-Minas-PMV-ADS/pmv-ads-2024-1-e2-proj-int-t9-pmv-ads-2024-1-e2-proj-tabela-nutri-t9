@@ -9,7 +9,7 @@ Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o
 Por exemplo:-->
  
 | **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
-|:---:	|:---:	|
+| :---:	| :---:	|
 |	Requisito Associado 	| RF-009 - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
 | Passos 	| <br> - Acessar o navegador <br> - Informar o endereço do site do NutriGenius <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
