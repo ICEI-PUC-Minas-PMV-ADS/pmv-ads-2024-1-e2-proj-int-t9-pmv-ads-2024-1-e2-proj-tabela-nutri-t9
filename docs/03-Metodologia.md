@@ -2,7 +2,7 @@
 
 Pré-requisitos: [Documentação de Especificação](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/blob/main/docs/02-Especifica%C3%A7%C3%A3o%20do%20Projeto.md)
 
-O desenvolvimento deste projeto segue a metodologia ágil SCRUM, incluindo uma planning de 1 hora às segundas, e duas dailies de 15 minutos às quartas e sextas. Essas reuniões são coordenadas pela Scrum Master. Os ciclos semanais estão alinhados com a conclusão de cada sprint, que é representada como um milestone e possui suas respectivas tarefas registradas como issues no GitHub.
+O desenvolvimento deste projeto segue a metodologia ágil SCRUM, incluindo uma planning de 1 hora às segundas, e duas daily de 15 minutos às quartas e sextas. Essas reuniões são coordenadas pela Scrum Master. Os ciclos semanais estão alinhados com a conclusão de cada sprint, que é representada como um milestone e possui suas respectivas tarefas registradas como issues no GitHub.
 
 Além disso, a entrada de novas tarefas no backlog da equipe é principalmente guiada pelas demandas do Product Owner, sendo realizadas pelos membros da equipe responsáveis pelo desenvolvimento e design.
 
