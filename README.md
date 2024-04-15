@@ -11,11 +11,11 @@ O NutriGenius é desenvolvido para simplificar a criação de tabelas nutriciona
 ## Integrantes
 
 * Aldrin Taylor C. Bittencourt
-* Cesar Augusto Lima dos Santos
+* Cesar Augusto L. dos Santos
 * Helbert Miranda Benício
 * Jefferson Wagner S. Silva
 * Júlia Berto Rosa
-* Luan César Souza dos Santos
+* Luan César S. dos Santos
 
 ## Orientador
 
