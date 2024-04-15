@@ -21,7 +21,7 @@ O fluxograma representa visualmente o fluxo do sistema, mostrando as etapas, dec
  - Nesta inicial o usuário encontrará as principais informacões sobre a aplicação.
 
 **2-** Tela de Login
-![Login](img/wireframe/login.png)
+![Login](img/wireframe/Login.png)
 - Nesta de tela, o usuário realizará o Login na aplicação.
 
 **3-** Tela de Cadastro
