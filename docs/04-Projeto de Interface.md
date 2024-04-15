@@ -40,6 +40,26 @@ O fluxograma representa visualmente o fluxo do sistema, mostrando as etapas, dec
 ![Itens cadastrados](img/wireframe/Itens%20cadastrados.png)
 - Nesta tela, o usuário irá acompanhar todos os seus itens cadastrados.
 
+**7-** Cadastro de matéria-prima
+
+![Itens cadastrados](img/wireframe/cadastro_materia_prima.png)
+- Nesta tela, caso o usuário não encontre, poderá cadastrar a matéria-prima.
+
+**8-** Cadastro de receita
+
+![Itens cadastrados](img/wireframe/cadastro_receita.png)
+- Nesta tela o usuário irá cadastrar a receita, para posteriormente realizar o download da tabela nutricional.
+
+**9-** Relatório da tabela
+
+![Itens cadastrados](img/wireframe/relatorio_tabela.png)
+- Nesta tela, o usuário irá gerar o relatório da tabela, da receita já cadastrada.
+
+**10-** Visualização da tabela
+
+![Itens cadastrados](img/wireframe/visualizar_tabela.png)
+- Nesta tela, o usuário poderá vizualizar a tabela, antes do download.
+
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
  
 > **Links Úteis**:
