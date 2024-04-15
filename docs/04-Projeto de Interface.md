@@ -5,7 +5,7 @@ Pré-requisitos: [Documentação de Especificação](https://github.com/ICEI-PUC
 
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+![Visão geral wireflame](img/wireframe/Visão%20geral%20wireflames.png)
 
 ## Diagrama de Fluxo
 
@@ -18,15 +18,27 @@ O fluxograma representa visualmente o fluxo do sistema, mostrando as etapas, dec
 
 **1-** Página Inicial: 
 ![Página inicial](img/wireframe/home-page.png)
- - Nesta inicial o usuário encontrará as principais informacões sobre a aplicação.
+ - Nesta tela inicial, o usuário encontrará as principais informacões sobre a aplicação.
 
 **2-** Tela de Login
 ![Login](img/wireframe/Login.png)
-- Nesta de tela, o usuário realizará o Login na aplicação.
+- Nesta tela, o usuário realizará o Login na aplicação.
 
 **3-** Tela de Cadastro
 ![Cadastro](img/wireframe/cadastro.png)
-- Nesta de tela, o usuário realizará o cadastro na aplicação.
+- Nesta tela, o usuário realizará o cadastro na aplicação.
+
+**4-** Perfil
+![Perfil](img/wireframe/Perfil.png)
+- Nesta tela, o usuário realizará ver e editar seus dados.
+
+**5-** Menu
+![Menu](img/wireframe/Menu.png)
+- Nesta tela, o usuário irá conhecer e ser direcionado para as as funções principais da aplicação.
+
+**6-** Itens cadastrados
+![Itens cadastrados](img/wireframe/Itens%20cadastrados.png)
+- Nesta tela, o usuário irá acompanhar todos os seus itens cadastrados.
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
  
