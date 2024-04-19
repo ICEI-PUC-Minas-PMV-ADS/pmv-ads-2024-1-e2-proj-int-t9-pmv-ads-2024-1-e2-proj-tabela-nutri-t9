@@ -20,6 +20,7 @@ O projeto segue a seguinte convenção para o nome de branches:
 - `cesar`: versão de desenvolvimento do software
 - `devjeff`: versão de desenvolvimento do software
 - `luan`: versão de desenvolvimento do software
+- `aldrin`: versão de desenvolvimento do software
 
 ![Branches](img/branches.png)
 
