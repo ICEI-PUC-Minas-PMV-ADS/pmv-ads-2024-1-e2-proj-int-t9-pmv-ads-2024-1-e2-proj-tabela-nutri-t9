@@ -5,7 +5,7 @@ Pré-requisitos: [Documentação de Especificação](https://github.com/ICEI-PUC
 
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+![Visão geral wireflame](img/wireframe/Visão%20geral%20wireflames.png)
 
 ## Diagrama de Fluxo
 
@@ -16,15 +16,53 @@ O fluxograma representa visualmente o fluxo do sistema, mostrando as etapas, dec
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+**1-** Página Inicial: 
+![Página inicial](img/wireframe/home-page.png)
+ - Nesta tela inicial, o usuário encontrará as principais informacões sobre a aplicação.
+
+**2-** Tela de Login
+![Login](img/wireframe/Login.png)
+- Nesta tela, o usuário realizará o Login na aplicação.
+
+**3-** Tela de Cadastro
+![Cadastro](img/wireframe/cadastro.png)
+- Nesta tela, o usuário realizará o cadastro na aplicação.
+
+**4-** Perfil
+![Perfil](img/wireframe/Perfil.png)
+- Nesta tela, o usuário realizará ver e editar seus dados.
+
+**5-** Menu
+![Menu](img/wireframe/Menu.png)
+- Nesta tela, o usuário irá conhecer e ser direcionado para as as funções principais da aplicação.
+
+**6-** Itens cadastrados
+![Itens cadastrados](img/wireframe/Itens%20cadastrados.png)
+- Nesta tela, o usuário irá acompanhar todos os seus itens cadastrados.
+
+**7-** Cadastro de matéria-prima
+
+![Itens cadastrados](img/wireframe/cadastro_materia_prima.png)
+- Nesta tela, caso o usuário não encontre, poderá cadastrar a matéria-prima.
+
+**8-** Cadastro de receita
+
+![Itens cadastrados](img/wireframe/cadastro_receita.png)
+- Nesta tela o usuário irá cadastrar a receita, para posteriormente realizar o download da tabela nutricional.
+
+**9-** Relatório da tabela
+
+![Itens cadastrados](img/wireframe/relatorio_tabela.png)
+- Nesta tela, o usuário irá gerar o relatório da tabela, da receita já cadastrada.
+
+**10-** Visualização da tabela
+
+![Itens cadastrados](img/wireframe/visualizar_tabela.png)
+- Nesta tela, o usuário poderá vizualizar a tabela, antes do download.
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
  
 > **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+
+> - [Figma - Interativo da aplicação](https://www.figma.com/proto/zPrKn1rMJLkmpdlpKbcpF7/NutriGenius?page-id=0%3A1&type=design&node-id=424-3600&viewport=-6335%2C-427%2C0.59&t=Vr2aVoSsXfygq1TX-1&scaling=min-zoom&mode=design])
+
