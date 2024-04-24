@@ -1,0 +1,84 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tabela-relatorio {
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabela-relatorio th,
+.tabela-relatorio td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.tabela-relatorio th {
+    text-align: left;
+    background-color: #f0f0f0;
+}
+
+.tabela-relatorio tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.observacao {
+    margin-top: 20px;
+}
+
+.detalhes-treinamento {
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formatoTabela {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
