@@ -3,7 +3,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace ExampleBackend
 {
-    public class Program
+    public class Application
     {
         public static void Main(string[] args)
         {
