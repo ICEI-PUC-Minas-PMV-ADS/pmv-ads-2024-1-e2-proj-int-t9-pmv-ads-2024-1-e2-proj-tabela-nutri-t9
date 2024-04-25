@@ -1,17 +1,12 @@
-/* style.css */
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 20px;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 h1 {
+    display: flex;
+    justify-content: center;
     font-size: 24px;
     font-weight: bold;
 }
@@ -22,38 +17,7 @@ h2 {
 }
 
 main {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.tabela-relatorio {
-    display: flex;
-    justify-content: center;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.tabela-relatorio th,
-.tabela-relatorio td {
-    border: 1px solid black;
-    padding: 8px;
-}
-
-.tabela-relatorio th {
-    text-align: left;
-    background-color: #f0f0f0;
-}
-
-.tabela-relatorio tr:nth-child(even) {
-    background-color: #fff;
-}
-
-.observacao {
-    margin-top: 20px;
-}
-
-.detalhes-treinamento {
-    margin-top: 20px;
+    margin: auto;
 }
 
 footer {
@@ -61,24 +25,69 @@ footer {
     margin-top: 20px;
 }
 
-.formatoTabela {
+fieldset {
     display: flex;
     justify-content: center;
+    padding: 0px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-  }
-  table {
+.formatoRelatorio {
+    width: 1000px;
+    box-sizing: border-box;
+    border-style: double;
+    margin-top: 10px;
+}
+
+.produtoRelatorio {
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.produtoRelatorio th,
+.produtoRelatorio td {
+    border: 1px solid black;
+    padding: 8px;
+
+}
+
+.produtoRelatorio th {
+    text-align: left;
+    background-color: #f0f0f0;
+}
+
+.ingredientesRelatorio {
+    text-align: justify;
+}
+
+.alergicosRelatorio {
+    text-align: justify;
+    font-weight: bold
+}
+
+.preparoRelatorio {
+    text-align: justify;
+}
+
+.conservacaoRelatorio table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-  }
-  th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
+}
+
+.conservacaoRelatorio th,
+.conservacaoRelatorio td {
+    border: 1px solid black;
+    text-align: center;
     padding: 8px;
-  }
-  th {
+}
+
+.conservacaoRelatorio th {
     background-color: #f2f2f2;
-  }
+}
+
+.observacaoRelatorio {
+    text-align: justify;
+    margin-top: 20px;
+}
