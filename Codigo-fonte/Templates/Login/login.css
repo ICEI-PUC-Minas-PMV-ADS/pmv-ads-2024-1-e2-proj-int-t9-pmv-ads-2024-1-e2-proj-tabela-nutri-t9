@@ -1,11 +1,7 @@
-html,body{
-    height: 100%;
+body {
+    background-color: #EBE2D9;
 }
 
-.form-center{
-    max-width: 300px;
-    padding: 1rem;
-    background-color: aliceblue;
-    border-radius: 10px;
-
+#central {
+    background-color: #E5AB7E;
 }
