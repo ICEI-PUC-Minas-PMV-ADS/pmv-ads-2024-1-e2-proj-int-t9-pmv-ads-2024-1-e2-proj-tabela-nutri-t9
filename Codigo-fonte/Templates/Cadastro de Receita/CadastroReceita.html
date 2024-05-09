@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Ingredientes</title>
+    <link rel="stylesheet" href="CadastroReceita.css">
+    <link rel="stylesheet" href="../shared.css">
+</head>
+
+<body>
+    <header>
+        <section class="cabecalho"></section>
+    </header>
+    <h1>Cadastro de Ingredientes</h1>
+
+    <form id="formIngrediente">
+        <label for="nomeIngrediente">Nome do Ingrediente:</label>
+        <input type="text" id="nomeIngrediente" name="nomeIngrediente" required>
+
+        <label for="quantidadeIngrediente">Quantidade:</label>
+        <input type="number" id="quantidadeIngrediente" name="quantidadeIngrediente" required>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <div id="listaIngredientes">
+        <h2>Ingredientes Cadastrados</h2>
+        <ul>
+        </ul>
+    </div>
+
+    <footer>
+        <section class="rodape"></section>
+    </footer>
+
+    <script type="module" src="../shared.js"></script>
+    <script src="CadastroReceita.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #0F482F;
+    color: #E5AB7E;
+    border: none;
+    cursor: pointer;
+}
+
+
+#listaIngredientes ul {
+    list-style: none;
+    padding: 0;
+}
+
+#listaIngredientes li {
+    margin-bottom: 10px;
+}
