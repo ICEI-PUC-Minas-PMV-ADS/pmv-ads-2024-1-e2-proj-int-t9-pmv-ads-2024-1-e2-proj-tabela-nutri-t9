@@ -11,10 +11,11 @@ label {
 
 input[type="text"],
 input[type="number"] {
-    width: 70%;
+    width: 50%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 button {
@@ -22,6 +23,7 @@ button {
     background-color: #0F482F;
     color: #E5AB7E;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
 }
 
