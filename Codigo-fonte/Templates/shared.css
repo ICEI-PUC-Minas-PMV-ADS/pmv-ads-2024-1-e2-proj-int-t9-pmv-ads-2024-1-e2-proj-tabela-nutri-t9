@@ -1,15 +1,17 @@
 body {
-    font-family: sans-serif;
-    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 10px;
     background-color: #EBE2D9; /* Cor de fundo da página */
 }
 
 header {
     background-color: #0F482F; /* Cor do cabeçalho */
     color: #E5AB7E; /* Cor do texto do cabeçalho */
-    padding: 10px 10px;
+    padding: 10px;
     text-align: center;
-    
+    width: auto;
+    height: auto;
 }
 
 h1 {
@@ -31,10 +33,11 @@ footer {
     background-color: #0F482F; /* Cor do rodapé */
     color: #E5AB7E; /* Cor do texto do rodapé */
     padding: 10px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 
