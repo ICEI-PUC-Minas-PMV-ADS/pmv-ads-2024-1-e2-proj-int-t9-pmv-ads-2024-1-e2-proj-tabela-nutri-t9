@@ -1,4 +1,4 @@
-criarNav();
+﻿criarNav();
 
 function criarNav() {
     let headerNav = document.querySelector('.cabecalho')
