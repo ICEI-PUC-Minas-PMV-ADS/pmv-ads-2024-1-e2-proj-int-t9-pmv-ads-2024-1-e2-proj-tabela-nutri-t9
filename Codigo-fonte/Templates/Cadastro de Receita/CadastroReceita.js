@@ -1,31 +1,17 @@
-const formIngrediente = document.getElementById('formIngrediente');
-const listaIngredientes = document.getElementById('listaIngredientes').querySelector('ul');
-
-formIngrediente.addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const nomeIngrediente = document.getElementById('nomeIngrediente').value;
-    const quantidadeIngrediente = document.getElementById('quantidadeIngrediente').value;
-
-    adicionarIngrediente(nomeIngrediente, quantidadeIngrediente);
-
-    formIngrediente.reset();
-});
-
-function adicionarIngrediente(nomeIngrediente, quantidadeIngrediente) {
-    const li = document.createElement('li');
-    li.textContent = `${nomeIngrediente}: ${quantidadeIngrediente}`;
-
-    const botaoRemover = document.createElement('button');
-    botaoRemover.textContent = 'Remover';
-    botaoRemover.addEventListener('click', function() {
-        removerIngrediente(li);
-    });
-
-    li.appendChild(botaoRemover);
-    listaIngredientes.appendChild(li);
-}
-
-function removerIngrediente(li) {
-    listaIngredientes.removeChild(li);
-}
+function addMaterial() {
+    const materialList = document.getElementById('material-list');
+    const newItem = document.createElement('div');
+    newItem.classList.add('material-item');
+    newItem.innerHTML = `
+      <input type="text" name="materialName[]" placeholder="Nome da Matéria-Prima" required>
+      <input type="number" name="materialQuantity[]" placeholder="Quantidade" required>
+      <button type="button" class="remove-btn" onclick="removeMaterial(this)">Remover</button>
+    `;
+    materialList.appendChild(newItem);
+  }
+  
+  function removeMaterial(button) {
+    const itemToRemove = button.parentNode;
+    itemToRemove.parentNode.removeChild(itemToRemove);
+  }
+  

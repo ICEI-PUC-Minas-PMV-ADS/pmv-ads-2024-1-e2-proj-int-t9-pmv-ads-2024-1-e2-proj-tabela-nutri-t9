@@ -1,38 +1,20 @@
-
-
-form {
-    margin-bottom: 20px;
+body {
+  font-family: Arial, sans-serif;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
+#form-container {
+  width: 400px;
+  margin: 0 auto;
 }
 
-input[type="text"],
-input[type="number"] {
-    width: 50%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+h2 {
+  text-align: center;
 }
 
-button {
-    padding: 8px 15px;
-    background-color: #0F482F;
-    color: #E5AB7E;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+.material-item {
+  margin-bottom: 10px;
 }
 
-
-#listaIngredientes ul {
-    list-style: none;
-    padding: 0;
-}
-
-#listaIngredientes li {
-    margin-bottom: 10px;
+.remove-btn {
+  margin-left: 10px;
 }

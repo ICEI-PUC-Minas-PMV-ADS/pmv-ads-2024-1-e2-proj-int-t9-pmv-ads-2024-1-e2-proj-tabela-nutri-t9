@@ -20,11 +20,6 @@ main {
     margin: auto;
 }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
-}
-
 fieldset {
     display: flex;
     justify-content: center;
