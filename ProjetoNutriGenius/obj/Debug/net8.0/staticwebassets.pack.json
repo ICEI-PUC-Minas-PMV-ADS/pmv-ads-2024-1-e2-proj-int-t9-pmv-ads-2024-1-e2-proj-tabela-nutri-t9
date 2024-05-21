@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\Views\\Shared\\_Layout.cshtml.js",
+      "PackagePath": "staticwebassets\\Views\\Shared\\_Layout.cshtml.js"
+    },
+    {
       "Id": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProjetoNutriGenius.bundle.scp.css",
       "PackagePath": "staticwebassets\\ProjetoNutriGenius.bundle.scp.css"
     },

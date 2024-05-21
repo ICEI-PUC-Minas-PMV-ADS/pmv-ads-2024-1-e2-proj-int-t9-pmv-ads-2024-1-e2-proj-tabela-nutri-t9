@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+var connectionString = "Server=localhost;Port=3306;Database=nutrigenius_db;Uid=root;";
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 21))));
+
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
@@ -23,5 +30,9 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=CadastroReceitas}/{action=Index}/{id?}");
 
 app.Run();
