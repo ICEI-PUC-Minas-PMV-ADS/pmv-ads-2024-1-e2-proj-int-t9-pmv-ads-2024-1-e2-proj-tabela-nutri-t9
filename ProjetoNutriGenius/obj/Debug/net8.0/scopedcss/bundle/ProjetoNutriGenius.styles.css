@@ -1,49 +1,83 @@
 /* _content/ProjetoNutriGenius/Views/Shared/_Layout.cshtml.rz.scp.css */
-/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+body[b-6x4slntgc4] {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+  background-color: #EBE2D9; /* Cor de fundo da página */
+}
 
-a.navbar-brand[b-6x4slntgc4] {
-  white-space: normal;
+header[b-6x4slntgc4] {
+  background-color: #0F482F; /* Cor do cabeçalho */
+  color: #E5AB7E; /* Cor do texto do cabeçalho */
+  padding: 20px;
   text-align: center;
-  word-break: break-all;
+  width: auto;
+  height: auto;
 }
 
-a[b-6x4slntgc4] {
-  color: #0077cc;
+h1[b-6x4slntgc4] {
+  margin: 0;
 }
 
-.btn-primary[b-6x4slntgc4] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+nav[b-6x4slntgc4] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Estilos para a navegação */
 }
 
-.nav-pills .nav-link.active[b-6x4slntgc4], .nav-pills .show > .nav-link[b-6x4slntgc4] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+main[b-6x4slntgc4] {
+  padding: 2em;
+  background-color: #fff; /* Cor do conteúdo principal */
 }
 
-.border-top[b-6x4slntgc4] {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom[b-6x4slntgc4] {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow[b-6x4slntgc4] {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy[b-6x4slntgc4] {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-.footer[b-6x4slntgc4] {
-  position: absolute;
-  bottom: 0;
+footer[b-6x4slntgc4] {
+  background-color: #0F482F; /* Cor do rodapé */
+  color: #E5AB7E; /* Cor do texto do rodapé */
+  padding: 10px;
   width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  margin-top: 10px;
+ 
+ 
+}
+
+button[b-6x4slntgc4] {
+  background-color: #0F482F;
+  color: #E5AB7E;
+}
+
+button:hover[b-6x4slntgc4] {
+  background-color: #779E39;
+  color: #EBE2D9;
+}
+
+.logo[b-6x4slntgc4] {
+  font-size: 24px;
+  display: grid;
+}
+
+.menu[b-6x4slntgc4] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li[b-6x4slntgc4] {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu a[b-6x4slntgc4] {
+  color: #E5AB7E;
+  text-decoration: none;
+}
+
+.menu a:hover[b-6x4slntgc4] {
+  color: #EBE2D9;
 }

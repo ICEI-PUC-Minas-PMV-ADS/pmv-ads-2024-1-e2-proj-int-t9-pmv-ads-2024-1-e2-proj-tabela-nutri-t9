@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DiOpHAMujDbgNgzifbFd+oueYvtK6Mb/2Q7cgtrpUvg=",
+  "Hash": "bcnI2gzBgTXRE1r2CVcJVdf2vzatPu30PlFCaQ7tPFo=",
   "Source": "ProjetoNutriGenius",
   "BasePath": "_content/ProjetoNutriGenius",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProjetoNutriGenius.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\Views\\Shared\\_Layout.cshtml.js",
+      "SourceId": "ProjetoNutriGenius",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\",
+      "BasePath": "_content/ProjetoNutriGenius",
+      "RelativePath": "Views/Shared/_Layout.cshtml.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "Views\\Shared\\_Layout.cshtml.js"
     },
     {
       "Identity": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\wwwroot\\css\\site.css",
