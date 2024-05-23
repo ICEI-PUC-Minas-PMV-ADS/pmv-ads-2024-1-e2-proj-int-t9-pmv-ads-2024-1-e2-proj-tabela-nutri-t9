@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj": {}
+    "C:\\Users\\55129\\Desktop\\Nova pasta (4)\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj": {
+    "C:\\Users\\55129\\Desktop\\Nova pasta (4)\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
+        "projectUniqueName": "C:\\Users\\55129\\Desktop\\Nova pasta (4)\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
         "projectName": "ProjetoNutriGenius",
-        "projectPath": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
-        "packagesPath": "C:\\Users\\hmben\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\obj\\",
+        "projectPath": "C:\\Users\\55129\\Desktop\\Nova pasta (4)\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
+        "packagesPath": "C:\\Users\\55129\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\55129\\Desktop\\Nova pasta (4)\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hmben\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\55129\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,6 +42,26 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
