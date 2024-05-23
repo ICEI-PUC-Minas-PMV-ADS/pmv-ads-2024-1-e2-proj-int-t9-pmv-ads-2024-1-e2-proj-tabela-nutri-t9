@@ -13,13 +13,13 @@ function criarNav() {
 function retornarNav() {
 
     return `<nav class="navbar">
-    <a href="#" class="logo">Sua Logo</a>
+    <a> <img class="logo" src="/docs/img/Logo.png"></a>
     <ul class="menu">
         <li><a href="#">Página Inicial</a></li>
         <li><a href="#">Como usar?</a></li>
         <li><a href="#">Qual legislação vigente?</a></li>
         <li><a href="#">Sobre Nós</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="../Login/login.html">Login</a></li>
     </ul>
     </nav>`
 };
