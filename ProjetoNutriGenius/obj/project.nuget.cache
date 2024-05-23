@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "fEjcKOd8Vfhffy16gsZzdiPAT+sOYL+erZazbCz3HCT0ESEQTGPzeHAdewdkDkt7BkoufOlX19H4mbOfkNFg7Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\55129\\Desktop\\Nova pasta (4)\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
@@ -133,5 +134,11 @@
     "C:\\Users\\55129\\.nuget\\packages\\system.xml.xpath\\4.0.1\\system.xml.xpath.4.0.1.nupkg.sha512",
     "C:\\Users\\55129\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.0.1\\system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "VlHprS5oOAwQN+DuyiWTpOSHWhonafBLEVIPtbiNfbQY+D23MGpdhe0/R7K5m85gJGY5Qsa/Kz9Y86teIR59Lg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrador\\Documents\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> 6e3712dc9814b4d3700ade82eda61e8d560bb360
   "logs": []
 }
