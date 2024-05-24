@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Receita</title>
+  <link rel="stylesheet" href="CadastroReceita.css">
+  <link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+
+  <header>
+    <section class="cabecalho"></section>
+  </header>
+
+  <div id="form-container">
+    <h2>Cadastro de Matéria-Prima</h2>
+    <form id="material-form">
+      <div id="material-list">
+        <div class="material-item">
+          <input type="text" name="materialName[]" placeholder="Nome da Matéria-Prima" required>
+          <input type="number" name="materialQuantity[]" placeholder="Quantidade" required>
+          <button type="button" class="remove-btn" onclick="removeMaterial(this)">Remover</button>
+        </div>
+      </div>
+      <button type="button" id="add-btn" onclick="addMaterial()">Adicionar Matéria-Prima</button>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <footer>
+    <section class="rodape"></section>
+  </footer>
+
+  <script type="module" src="../shared.js"></script>
+  <script src="CadastroReceita.js"></script>
+</body>
+</html>
