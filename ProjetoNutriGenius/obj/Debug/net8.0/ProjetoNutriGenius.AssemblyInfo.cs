@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjetoNutriGenius")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ff6cc5b6f47a1286ed9b53a9421f2c3339920c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ebef7f6ad832d0f2bf1a019fdec09e78c4a0511")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjetoNutriGenius")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjetoNutriGenius")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
