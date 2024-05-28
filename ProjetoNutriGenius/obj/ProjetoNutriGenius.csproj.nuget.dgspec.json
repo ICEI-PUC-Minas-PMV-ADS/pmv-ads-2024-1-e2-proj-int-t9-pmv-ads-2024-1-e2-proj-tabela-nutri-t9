@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj": {}
   },
   "projects": {
@@ -12,9 +13,27 @@
         "projectPath": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
         "packagesPath": "C:\\Users\\hmben\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\obj\\",
+=======
+    "C:\\Users\\jwlal\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jwlal\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jwlal\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
+        "projectName": "ProjetoNutriGenius",
+        "projectPath": "C:\\Users\\jwlal\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
+        "packagesPath": "C:\\Users\\jwlal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jwlal\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\obj\\",
+>>>>>>> d74655082089592325e41599a76664eb95899280
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\hmben\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\jwlal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> d74655082089592325e41599a76664eb95899280
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,11 +53,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -77,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
