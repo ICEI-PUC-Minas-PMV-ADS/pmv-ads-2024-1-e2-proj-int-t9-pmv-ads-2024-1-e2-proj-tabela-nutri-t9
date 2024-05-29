@@ -1,5 +1,3 @@
-using System;
-using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
 public class MateriaPrimaService
@@ -21,7 +19,7 @@ public class MateriaPrimaService
     // Read
     public MateriaPrimaModel ObterMateriaPrimaPorNome(string nome)
     {
-        return _context.MateriasPrimaRepository.FirstOrDefault(mp => mp.nome_materia_prima == nome);
+        return _context.MateriasPrimaRepository.FirstOrDefault(mp => mp.NomeMateriaPrima == nome);
     }
 
     // Update
@@ -34,7 +32,7 @@ public class MateriaPrimaService
     // Delete
     public void ExcluirMateriaPrima(string nome)
     {
-        var materiaPrima = _context.MateriasPrimaRepository.FirstOrDefault(mp => mp.nome_materia_prima == nome);
+        var materiaPrima = _context.MateriasPrimaRepository.FirstOrDefault(mp => mp.NomeMateriaPrima == nome);
         if (materiaPrima != null)
         {
             _context.MateriasPrimaRepository.Remove(materiaPrima);
