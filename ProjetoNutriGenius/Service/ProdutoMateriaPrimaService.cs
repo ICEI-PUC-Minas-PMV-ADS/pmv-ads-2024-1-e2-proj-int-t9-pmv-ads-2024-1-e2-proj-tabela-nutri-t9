@@ -20,7 +20,7 @@ public class ProdutoMateriaPrimaService
     // Read
     public ProdutoMateriaPrimaModel ObterProdutoMateriaPrimaPorNomes(string nomeProduto, string nomeMateriaPrima)
     {
-        return _context.ProdutoMateriaPrimaRepository.FirstOrDefault(mp => mp.nome_produto == nomeProduto && mp.nome_materia_prima == nomeMateriaPrima);
+        return _context.ProdutoMateriaPrimaRepository.FirstOrDefault(e => e.Produto.NomeProduto == nomeProduto && e.MateriaPrima.NomeMateriaPrima == nomeMateriaPrima);
     }
 
     // Update
@@ -33,7 +33,7 @@ public class ProdutoMateriaPrimaService
     // Delete
     public void ExcluirProdutoMateriaPrima(string nomeProduto, string nomeMateriaPrima)
     {
-        var produtoMateriaPrima = _context.ProdutoMateriaPrimaRepository.FirstOrDefault(mp => mp.nome_produto == nomeProduto && mp.nome_materia_prima == nomeMateriaPrima);
+        var produtoMateriaPrima = _context.ProdutoMateriaPrimaRepository.FirstOrDefault(e => e.Produto.NomeProduto == nomeProduto && e.MateriaPrima.NomeMateriaPrima == nomeMateriaPrima);
         if (produtoMateriaPrima != null)
         {
             _context.ProdutoMateriaPrimaRepository.Remove(produtoMateriaPrima);

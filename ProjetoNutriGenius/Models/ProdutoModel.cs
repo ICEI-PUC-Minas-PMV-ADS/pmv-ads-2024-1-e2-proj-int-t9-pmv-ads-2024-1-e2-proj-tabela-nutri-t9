@@ -1,16 +1,24 @@
+//using System.ComponentModel.DataAnnotations;
+//using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-[Table("produto")]
+//[Table("produto")]
 public class ProdutoModel
 {
-    [Key]
-    public string nome_produto { get; set; }
+//    [Key]
+    [Required]
+    public string NomeProduto { get; set; }
 
-    public Codigo_Produto codigo_produto { get; set; }
+    public Codigo_Produto ? CodigoProduto { get; set; }
 
-    [ForeignKey("usuario")]
-    public string email { get; set; }
+//    [ForeignKey("usuario")]
+//    public string Email { get; set; } =  string.Empty;
+
+    [Required]
+    public UsuarioModel ? Usuario { get; set; }
+
+    [Required]
+    public ProdutoMateriaPrimaModel ? ProdutoMateriaPrima;
 }
 
 public enum Codigo_Produto
