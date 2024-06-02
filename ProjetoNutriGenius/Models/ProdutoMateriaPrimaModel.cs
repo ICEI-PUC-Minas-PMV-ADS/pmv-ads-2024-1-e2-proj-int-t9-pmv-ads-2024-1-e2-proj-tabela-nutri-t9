@@ -15,8 +15,8 @@ public class ProdutoMateriaPrimaModel
     public double ? Quantidade { get; set; }
     
     [Required]
-    public ProdutoModel Produto { get; set; }
+    public ProdutoModel ? Produto { get; set; }
 
     [Required]
-    public MateriaPrimaModel MateriaPrima { get; set; }
+    public MateriaPrimaModel ? MateriaPrima { get; set; }
 }

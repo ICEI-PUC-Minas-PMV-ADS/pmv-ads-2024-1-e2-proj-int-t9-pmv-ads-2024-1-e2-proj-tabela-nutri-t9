@@ -8,7 +8,7 @@ public class MateriaPrimaModel
 {
 //    [Key]
     [Required]
-    public string NomeMateriaPrima { get; set; }
+    public string ? NomeMateriaPrima { get; set; }
     
     public int ? ValorEnergetico { get; set; }
     

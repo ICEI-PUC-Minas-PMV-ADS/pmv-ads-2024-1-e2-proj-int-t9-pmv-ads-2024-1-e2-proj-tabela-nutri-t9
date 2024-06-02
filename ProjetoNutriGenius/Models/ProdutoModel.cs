@@ -7,7 +7,7 @@ public class ProdutoModel
 {
 //    [Key]
     [Required]
-    public string NomeProduto { get; set; }
+    public string ? NomeProduto { get; set; }
 
     public Codigo_Produto ? CodigoProduto { get; set; }
 
