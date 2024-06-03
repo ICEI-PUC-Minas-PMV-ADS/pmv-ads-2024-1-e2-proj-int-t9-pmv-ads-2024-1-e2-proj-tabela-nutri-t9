@@ -7,6 +7,7 @@ public class ApplicationDbContext : DbContext
     {
     }
     public DbSet<MateriaPrimaModel> materiaPrimaModel { get; set; }
+    public DbSet<UsuarioModel> UsuarioRepository { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -48,20 +49,30 @@ public class ApplicationDbContext : DbContext
             entity.ToTable("produto");
             entity.Property(e => e.NomeProduto).HasColumnName("nome_produto");
             entity.Property(e => e.CodigoProduto).HasColumnName("codigo_produto");
-            entity.HasOne(e => e.Usuario)
-                .WithMany(e => e.Produto)
-                .HasForeignKey(e => e.Usuario.Email)
-                .OnDelete(DeleteBehavior.Cascade);
+            entity.HasOne(e => e.Usuario);
+//                .WithMany(e => e.Produto)
+  //              .HasForeignKey(e => e.Usuario.Email)
+    //            .OnDelete(DeleteBehavior.Cascade);
         });
 
         modelBuilder.Entity<UsuarioModel>(entity =>
         {
-            entity.HasKey(e => new {e.Email});
-            entity.ToTable("usuario");
-            entity.Property(e => e.NomeUsuario).HasColumnName("nome_usuario"); 
-            entity.Property(e => e.Senha).HasColumnName("senha");
-            entity.Property(e => e.Email).HasColumnName("email");
-        });
+            entity.HasNoKey();
+            entity.ToTable("usuario"); 
+            entity.Property(e => e.NomeCompleto).IsRequired().HasColumnName("nome_completo");
+            entity.Property(e => e.Email).IsRequired().HasColumnName("email");
+            entity.Property(e => e.Celular).HasColumnName("celular");
+            entity.Property(e => e.CNPJ).HasColumnName("cnpj");
+            entity.Property(e => e.RazaoSocial).HasColumnName("razao_social");
+            entity.Property(e => e.Senha).IsRequired().HasColumnName("senha");
+            entity.Property(e => e.ConfirmeSenha).IsRequired().HasColumnName("confirme_senha");
+            entity.Property(e => e.CEP).HasColumnName("cep");
+            entity.Property(e => e.Numero).HasColumnName("numero");
+            entity.Property(e => e.Estado).HasColumnName("estado");
+            entity.Property(e => e.Cidade).HasColumnName("cidade");
+            entity.Property(e => e.Bairro).HasColumnName("bairro");
+            entity.Property(e => e.Rua).HasColumnName("rua");
+        });        
 
     }
 }

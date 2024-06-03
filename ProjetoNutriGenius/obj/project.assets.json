@@ -2827,24 +2827,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\55129\\.nuget\\packages\\": {}
+    "C:\\Users\\leoro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\55129\\Desktop\\Projeto\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
+      "projectUniqueName": "C:\\Users\\leoro\\Downloads\\tabela-nutri\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
       "projectName": "ProjetoNutriGenius",
-      "projectPath": "C:\\Users\\55129\\Desktop\\Projeto\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
-      "packagesPath": "C:\\Users\\55129\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\55129\\Desktop\\Projeto\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\obj\\",
+      "projectPath": "C:\\Users\\leoro\\Downloads\\tabela-nutri\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
+      "packagesPath": "C:\\Users\\leoro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leoro\\Downloads\\tabela-nutri\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\55129\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\leoro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
