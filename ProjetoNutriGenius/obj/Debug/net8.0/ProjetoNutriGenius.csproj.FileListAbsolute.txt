@@ -71,6 +71,9 @@ C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-
 C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\ProjetoNutriGenius.csproj.AssemblyReference.cache
 C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\ProjetoN.C679C0DB.Up2Date
+<<<<<<< HEAD
+C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\scopedcss\Views\Home\Index.cshtml.rz.scp.css
+=======
 C:\Users\55129\Desktop\Projeto\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\ProjetoNutriGenius.csproj.AssemblyReference.cache
 C:\Users\55129\Desktop\Projeto\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\ProjetoNutriGenius.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\55129\Desktop\Projeto\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\ProjetoNutriGenius.AssemblyInfoInputs.cache
@@ -217,3 +220,4 @@ C:\Users\leoro\Downloads\tabela-nutri\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024
 C:\Users\leoro\Downloads\tabela-nutri\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\ProjetoNutriGenius.pdb
 C:\Users\leoro\Downloads\tabela-nutri\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\ProjetoNutriGenius.genruntimeconfig.cache
 C:\Users\leoro\Downloads\tabela-nutri\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\ref\ProjetoNutriGenius.dll
+>>>>>>> 6ef89ade881e99fed787656ad1af073b615dbc73

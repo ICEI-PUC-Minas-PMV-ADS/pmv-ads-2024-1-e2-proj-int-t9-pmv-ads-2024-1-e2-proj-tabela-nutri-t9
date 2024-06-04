@@ -2,18 +2,42 @@
     Layout = "_Layout";
 }
 
+  <div id="form-container">
+    <form id="material-form">
+      <fieldset>
+        <legend>
+          <h1>Cadastro de Receitas</h1>
+        </legend>
 
-<div class="text-center" id="form-container">
-  <h2 class="display-4">Cadastro de Matéria-Prima</h2>
-  <form id="material-form">
-    <div id="material-list">
-      <div class="material-item">
-        <input type="text" name="materialName[]" placeholder="Nome da Matéria-Prima" required>
-        <input type="number" name="materialQuantity[]" placeholder="Quantidade" required>
-        <button type="button" class="remove-btn" onclick="removeMaterial(this)">Remover</button>
-      </div>
-    </div>
-    <button type="button" id="add-btn" onclick="addMaterial()">Adicionar Matéria-Prima</button>
-    <button type="submit">Enviar</button>
-  </form>
-</div>
+        <div class="tipoMP">
+          <select name="tipoMP" id="">
+            <option value="semiacabado">Semiacabado</option>
+            <option value="acabado">Acabado</option>
+          </select>
+
+          <button type="button" id="add-btn" onclick="addMateria()">Adicionar Matéria-Prima</button>
+          <button type="submit">Salvar</button>
+        </div>
+
+        <div id="material-list">
+          <div class="material-item">
+            <input type="text" name="nomeMP" placeholder="Nome da Matéria-Prima" required>
+            <input type="number" name="quantidadeMP" placeholder="Quantidade" required>
+            <button type="button" class="remove-btn" onclick="removeMateria(this)">Remover</button>
+            <input type="number" name="" placeholder="Valor energético" disabled id="">
+            <input type="number" name="" placeholder="Carboidratos" disabled id="">
+            <input type="number" name="" placeholder="Açúcares Totais" disabled id="">
+            <input type="number" name="" placeholder="Açúcares Adicionados" disabled id="">
+            <input type="number" name="" placeholder="Proteínas" disabled id="">
+            <input type="number" name="" placeholder="Gorduras Totais" disabled id="">
+            <input type="number" name="" placeholder="Gorduras Saturadas" disabled id="">
+            <input type="number" name="" placeholder="Gorduras Trans" disabled id="">
+            <input type="number" name="" placeholder="Fibra Alimentar" disabled id="">
+            <input type="number" name="" placeholder="Sódio" disabled id="">
+          </div>
+        </div>
+      </fieldset>
+
+
+    </form>
+  </div>
