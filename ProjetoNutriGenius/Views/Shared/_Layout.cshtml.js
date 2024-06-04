@@ -19,7 +19,7 @@ function retornarNav() {
         <li><a href="#">Como usar?</a></li>
         <li><a href="#">Qual legislação vigente?</a></li>
         <li><a href="#">Sobre Nós</a></li>
-        <li><a href="../Login/login.html">Login</a></li>
+        <li><a href="../Usuario/CadastroUsuario.cshtml">Login</a></li>
     </ul>
     </nav>`
 };

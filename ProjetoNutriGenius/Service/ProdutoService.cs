@@ -21,7 +21,7 @@ public class ProdutoService
     // Read
     public ProdutoModel ObterProduto(string nomeProduto)
     {
-        return _context.ProdutoRepository.FirstOrDefault(mp => mp.nome_produto == nomeProduto);
+        return _context.ProdutoRepository.FirstOrDefault(e => e.NomeProduto == nomeProduto);
     }
 
     // Update
@@ -34,7 +34,7 @@ public class ProdutoService
     // Delete
     public void ExcluirProduto(string nomeProduto)
     {
-        var produto = _context.ProdutoRepository.FirstOrDefault(mp => mp.nome_produto == nomeProduto);
+        var produto = _context.ProdutoRepository.FirstOrDefault(e => e.NomeProduto == nomeProduto);
         if (produto != null)
         {
             _context.ProdutoRepository.Remove(produto);

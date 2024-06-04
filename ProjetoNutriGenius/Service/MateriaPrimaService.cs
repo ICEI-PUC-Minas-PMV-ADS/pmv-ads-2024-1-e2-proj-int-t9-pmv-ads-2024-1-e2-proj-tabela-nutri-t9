@@ -17,9 +17,9 @@ public class MateriaPrimaService
     }
 
     // Read
-    public MateriaPrimaModel ObterMateriaPrimaPorNome(string nome)
+    public MateriaPrimaModel ObterMateriaPrimaPorNome(string nomeMateriaPrima)
     {
-        return _context.MateriasPrimaRepository.FirstOrDefault(mp => mp.NomeMateriaPrima == nome);
+        return _context.MateriasPrimaRepository.FirstOrDefault(e => e.NomeMateriaPrima == nomeMateriaPrima);
     }
 
     // Update
@@ -30,9 +30,9 @@ public class MateriaPrimaService
     }
 
     // Delete
-    public void ExcluirMateriaPrima(string nome)
+    public void ExcluirMateriaPrima(string nomeMateriaPrima)
     {
-        var materiaPrima = _context.MateriasPrimaRepository.FirstOrDefault(mp => mp.NomeMateriaPrima == nome);
+        var materiaPrima = _context.MateriasPrimaRepository.FirstOrDefault(e => e.NomeMateriaPrima == nomeMateriaPrima);
         if (materiaPrima != null)
         {
             _context.MateriasPrimaRepository.Remove(materiaPrima);

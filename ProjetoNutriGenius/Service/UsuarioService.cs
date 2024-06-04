@@ -21,7 +21,7 @@ public class UsuarioService
     // Read
     public UsuarioModel ObterUsuarioPorEmail(string email)
     {
-        return _context.UsuarioRepository.FirstOrDefault(mp => mp.email == email);
+        return _context.UsuarioRepository.FirstOrDefault(e => e.Email == email);
     }
 
     // Update
@@ -34,7 +34,7 @@ public class UsuarioService
     // Delete
     public void ExcluirUsuario(string email)
     {
-        var usuario = _context.UsuarioRepository.FirstOrDefault(mp => mp.email == email);
+        var usuario = _context.UsuarioRepository.FirstOrDefault(e => e.Email == email);
         if (usuario != null)
         {
             _context.UsuarioRepository.Remove(usuario);
