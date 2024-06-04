@@ -53,14 +53,16 @@ section.informacao table {
     border-spacing: 0px;
 }
 
-section.informacao table tbody tr td, th {
+section.informacao table tbody tr td,
+th {
     border-bottom: 1px solid black;
     padding: 1mm;
     text-align: center;
 }
 
-section.informacao table tbody td:not(:last-child), th:not(:last-child) {    
-    border-right: 1px solid black; 
+section.informacao table tbody td:not(:last-child),
+th:not(:last-child) {
+    border-right: 1px solid black;
 }
 
 section.informacao p {
@@ -106,7 +108,7 @@ section.informacao p {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
 /*FORMATAÇÃO DOS INDICATIVOS DE ALTO EM:*/
 

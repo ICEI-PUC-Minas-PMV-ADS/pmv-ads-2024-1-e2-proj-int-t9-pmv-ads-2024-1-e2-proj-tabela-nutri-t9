@@ -9,51 +9,39 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProjetoNutriGenius
 build_property.RootNamespace = ProjetoNutriGenius
-build_property.ProjectDir = C:\Users\jwlal\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\
+build_property.ProjectDir = C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\jwlal\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius
+build_property.MSBuildProjectDirectory = C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/jwlal/OneDrive/Documentos/GitHub/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/ProjetoNutriGenius/ProjetoNutriGenius.razor]
+[C:/Users/hmben/OneDrive/Documentos/GitHub/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/ProjetoNutriGenius/ProjetoNutriGenius.razor]
 build_metadata.AdditionalFiles.TargetPath = UHJvamV0b051dHJpR2VuaXVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jwlal/OneDrive/Documentos/GitHub/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/ProjetoNutriGenius/Views/CadastroReceitas/Index.cshtml]
+[C:/Users/hmben/OneDrive/Documentos/GitHub/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/ProjetoNutriGenius/Views/CadastroReceitas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9SZWNlaXRhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jwlal/OneDrive/Documentos/GitHub/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/ProjetoNutriGenius/Views/Home/Index.cshtml]
+[C:/Users/hmben/OneDrive/Documentos/GitHub/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/ProjetoNutriGenius/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< HEAD
 [C:/Users/hmben/OneDrive/Documentos/GitHub/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/ProjetoNutriGenius/Views/Shared/_ValidationScriptsPartial.cshtml]
-=======
-[C:/Users/jwlal/OneDrive/Documentos/GitHub/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/ProjetoNutriGenius/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/jwlal/OneDrive/Documentos/GitHub/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/ProjetoNutriGenius/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/jwlal/OneDrive/Documentos/GitHub/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/ProjetoNutriGenius/Views/Shared/_ValidationScriptsPartial.cshtml]
->>>>>>> d74655082089592325e41599a76664eb95899280
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jwlal/OneDrive/Documentos/GitHub/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/ProjetoNutriGenius/Views/_ViewImports.cshtml]
+[C:/Users/hmben/OneDrive/Documentos/GitHub/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/ProjetoNutriGenius/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jwlal/OneDrive/Documentos/GitHub/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/ProjetoNutriGenius/Views/_ViewStart.cshtml]
+[C:/Users/hmben/OneDrive/Documentos/GitHub/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/ProjetoNutriGenius/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jwlal/OneDrive/Documentos/GitHub/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/ProjetoNutriGenius/Views/Shared/_Layout.cshtml]
+[C:/Users/hmben/OneDrive/Documentos/GitHub/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9/ProjetoNutriGenius/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-6x4slntgc4
