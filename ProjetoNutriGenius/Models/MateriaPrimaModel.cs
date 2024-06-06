@@ -30,8 +30,8 @@ public class MateriaPrimaModel
     
     public int ? Sodio { get; set; }
     
-    //[Required]    
-    //public ICollection<ProdutoMateriaPrimaModel> ? ProdutoMateriaPrima { get; set; } = new List<ProdutoMateriaPrimaModel>();
+    [Required]    
+    public ICollection<ProdutoMateriaPrimaModel> ? ProdutoMateriaPrima { get; set; } = new List<ProdutoMateriaPrimaModel>();
 }
 
 

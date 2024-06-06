@@ -23,19 +23,21 @@ h2 {
   margin-left: 10px;
 }
 
-input:disabled {
+.infoNutri {
   height: auto;
   width: 80px;
   text-align: center;
 }
 
 .nomeMP {
-  width: 500px;
+  width: 480px;
+  height: 20px;
 }
 
 .quantidadeMP {
   text-align: center;
   width: 100px;
+  height: 20px;
 }
 
 select {
@@ -50,6 +52,12 @@ select {
   justify-content: center;
   background-color: white;
   width: auto;
+  margin-top: 10px;
+}
+
+.porcao {
+margin-left: 10px;
+text-align: center;
 }
 
 .section2 {

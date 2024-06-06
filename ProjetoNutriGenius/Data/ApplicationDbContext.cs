@@ -30,17 +30,17 @@ public class ApplicationDbContext : DbContext
 
         modelBuilder.Entity<ProdutoMateriaPrimaModel>(entity =>
         {
-            entity.HasKey(e => new {e.NomeMateriaPrima});
+            entity.HasKey(e => e.NomeMateriaPrima);
             entity.ToTable("produto_materia_prima");
             entity.Property(e => e.Quantidade).HasColumnName("quantidade");
-            //entity.HasOne(e => e.Produto)
-            //      .WithOne(e => e.ProdutoMateriaPrima)
-            //      .HasForeignKey<ProdutoModel>(e => e.NomeProduto)
-            //      .OnDelete(DeleteBehavior.Cascade);
-            //entity.HasOne(e => e.MateriaPrima)
-            //      .WithMany(e => e.ProdutoMateriaPrima)
-            //      .HasForeignKey(e => e.MateriaPrima.NomeMateriaPrima)
-            //      .OnDelete(DeleteBehavior.Cascade);
+            entity.HasOne(e => e.Produto)
+                  .WithOne(e => e.ProdutoMateriaPrima)
+                  .HasForeignKey<ProdutoModel>(e => e.NomeProduto)
+                  .OnDelete(DeleteBehavior.Cascade);
+            entity.HasOne(e => e.MateriaPrima)
+                  .WithMany(e => e.ProdutoMateriaPrima)
+                  .HasForeignKey(e => e.NomeMateriaPrima)
+                  .OnDelete(DeleteBehavior.Cascade);
         });
 
         modelBuilder.Entity<ProdutoModel>(entity =>
