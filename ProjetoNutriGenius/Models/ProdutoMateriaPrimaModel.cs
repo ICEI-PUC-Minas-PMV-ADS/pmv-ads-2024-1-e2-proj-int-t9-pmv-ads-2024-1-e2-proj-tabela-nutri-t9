@@ -13,10 +13,12 @@ public class ProdutoMateriaPrimaModel
 //    [ForeignKey("materia_prima")]
 //    public string NomeMateriaPrima { get; set; } = string.Empty;
     public double ? Quantidade { get; set; }
+
+    public string ? NomeMateriaPrima { get; set; }
     
     [Required]
-    public ProdutoModel ? Produto { get; set; }
+    public virtual ProdutoModel ? Produto { get; set; }
 
     [Required]
-    public MateriaPrimaModel ? MateriaPrima { get; set; }
+    public virtual MateriaPrimaModel ? MateriaPrima { get; set; }
 }

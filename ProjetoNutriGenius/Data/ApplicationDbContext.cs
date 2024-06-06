@@ -30,7 +30,7 @@ public class ApplicationDbContext : DbContext
 
         modelBuilder.Entity<ProdutoMateriaPrimaModel>(entity =>
         {
-            entity.HasKey(e => new {e.MateriaPrima});
+            entity.HasKey(e => e.NomeMateriaPrima);
             entity.ToTable("produto_materia_prima");
             entity.Property(e => e.Quantidade).HasColumnName("quantidade");
             entity.HasOne(e => e.Produto)
@@ -39,7 +39,7 @@ public class ApplicationDbContext : DbContext
                   .OnDelete(DeleteBehavior.Cascade);
             entity.HasOne(e => e.MateriaPrima)
                   .WithMany(e => e.ProdutoMateriaPrima)
-                  .HasForeignKey(e => e.MateriaPrima.NomeMateriaPrima)
+                  .HasForeignKey(e => e.NomeMateriaPrima)
                   .OnDelete(DeleteBehavior.Cascade);
         });
 
@@ -57,7 +57,7 @@ public class ApplicationDbContext : DbContext
 
         modelBuilder.Entity<UsuarioModel>(entity =>
         {
-            entity.HasNoKey();
+            entity.HasKey(e => new {e.Email});
             entity.ToTable("usuario"); 
             entity.Property(e => e.NomeCompleto).IsRequired().HasColumnName("nome_completo");
             entity.Property(e => e.Email).IsRequired().HasColumnName("email");
