@@ -46,6 +46,18 @@ namespace WebApp.Controllers
             return Ok(materiaPrima);
         }
 
+        [HttpGet("filtro/{nome}")] // Retorna o registo filtrando-o pelo nome
+        public IActionResult GetMateriaPrimaFiltrado(string nome)
+        {
+            var materiaPrima = _context.materiaPrimaModel.Where(p => p.NomeMateriaPrima.Contains(nome));
+            if (materiaPrima == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(materiaPrima);
+        }
+
         [HttpGet]
         public IActionResult GetAllMateriaPrima() // Retorna todo o registro
         {

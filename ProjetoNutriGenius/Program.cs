@@ -21,6 +21,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
 
 app.UseRouting();
@@ -30,5 +31,15 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "Menu",
+    pattern: "Menu",
+    defaults: new { controller = "Menu", action = "Index" });
+
+    app.MapControllerRoute(
+    name: "CadastroReceita",
+    pattern: "CadastroReceita",
+    defaults: new { controller = "CadastroReceita", action = "Index" });
 
 app.Run();

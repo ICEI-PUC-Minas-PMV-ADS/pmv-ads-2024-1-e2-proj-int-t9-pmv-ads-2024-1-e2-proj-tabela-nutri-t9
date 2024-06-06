@@ -1,20 +1,20 @@
+@{
+  Layout = "_Layout";
+}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="~/css/Shared/_Layout.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/cadastroReceita.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/tabelaNutri.css" asp-append-version="true" />
   <title>Cadastro de Receita</title>
-  <link rel="stylesheet" href="CadastroReceita.css">
-  <link rel="stylesheet" href="../Tabela Nutricional/tabelaNutricional.css">
-  <link rel="stylesheet" href="../shared.css">
 </head>
 
 <body>
-
-  <header>
-    <section class="cabecalho"></section>
-  </header>
 
   <div class="container">
     <form>
@@ -90,12 +90,8 @@
     </fieldset>
   </div>
 
-  <footer>
-    <section class="rodape"></section>
-  </footer>
-
-  <script type="module" src="../shared.js"></script>
-  <script src="CadastroReceita.js"></script>
+  <script src="~/js/cadastroReceita.js" asp-append-version="true"></script>
+  
 </body>
 
 </html>

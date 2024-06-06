@@ -1,34 +1,3 @@
-/* _content/ProjetoNutriGenius/Views/Home/Index.cshtml.rz.scp.css */
-#form-container[b-ig9170ptob] {
-    display: grid;
-    justify-items: center;
-    width: auto;
-    margin: 30px;
-  }
-  
-  h2[b-ig9170ptob] {
-    text-align: center;
-  }
-  
-  .material-item[b-ig9170ptob] {
-    margin-bottom: 10px;
-  }
-  
-  .remove-btn[b-ig9170ptob] {
-    margin-left: 10px;
-  }
-  
-  input:disabled[b-ig9170ptob] {
-    height: auto;
-    width: 100px;
-  }
-  
-  select[b-ig9170ptob] {
-    height: auto;
-    width: auto;
-    margin-bottom: 10px;
-    border: solid 2px;
-  }
 /* _content/ProjetoNutriGenius/Views/Shared/_Layout.cshtml.rz.scp.css */
 body[b-6x4slntgc4] {
   font-family: Arial, Helvetica, sans-serif;
@@ -84,8 +53,8 @@ button[b-6x4slntgc4] {
 }
 
 button:hover[b-6x4slntgc4] {
-  background-color: #779E39;
-  color: #EBE2D9;
+  background-color: #0F482F; 
+  color: #E5AB7E; 
 }
 
 .logo[b-6x4slntgc4] {
