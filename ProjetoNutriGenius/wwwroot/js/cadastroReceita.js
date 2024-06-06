@@ -4,6 +4,7 @@ $(document).ready(function () {
 
 let todasMps = [];
 filtrarMP()
+criarTabela();
 
 function addMateria() {
     const materialList = document.getElementById('material-list');
@@ -38,7 +39,6 @@ function addMateria() {
     console.log(mpFiltrada);
 
     let inputs = newItem.querySelectorAll("input");
-
 
     for (let i = 0; i < inputs.length; i++) {
         const element = inputs[i];
@@ -89,8 +89,6 @@ function removeMateria(button) {
     const itemToRemove = button.parentNode;
     itemToRemove.parentNode.removeChild(itemToRemove);
 }
-
-criarTabela();
 
 function criarTabela() {
     let tabelaDiv = document.querySelector('.tabela')
