@@ -37,7 +37,7 @@ app.MapControllerRoute(
     pattern: "Menu",
     defaults: new { controller = "Menu", action = "Index" });
 
-    app.MapControllerRoute(
+app.MapControllerRoute(
     name: "CadastroReceita",
     pattern: "CadastroReceita",
     defaults: new { controller = "CadastroReceita", action = "Index" });
