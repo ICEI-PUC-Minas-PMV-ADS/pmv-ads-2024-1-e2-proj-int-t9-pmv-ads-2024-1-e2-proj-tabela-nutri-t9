@@ -32,6 +32,7 @@
             <option value="semiacabado">Semiacabado</option>
             <option value="acabado">Acabado</option>
           </select>
+          <input class="nomeReceita" type="text" name="nomeReceita" placeholder="Nome da Receita" id="">
           <button type="submit">Salvar</button>
         </div>
 
@@ -39,7 +40,7 @@
 
           <div class="material-item">
             <select name="nomesMpFiltro" id="nomesMpFiltro" class="select2 nomeMP"
-              aria-placeholder="Selecione a Matéria-Prima">
+              placeholder="Selecione a Matéria-Prima">
             </select>
             <input class="quantidadeMP" type="text" name="quantidadeMP" placeholder="Quant. (g)" required>
             <button type="button" id="add-btn" onclick="addMateria()">Adicionar</button>
@@ -54,13 +55,13 @@
             <input class="infoNutri" type="number" name="gordurasTrans" placeholder="G.Trans" disabled id="">
             <input class="infoNutri" type="number" name="fibraAlimentar" placeholder="Fibra" disabled id="">
             <input class="infoNutri" type="number" name="sodio" placeholder="Sódio" disabled id="">
-       
+
           </div>
 
         </div>
       </fieldset>
     </form>
-    <fieldset>
+    <fieldset class="field">
       <div class="section2">
         <fieldset>
           <input class="porcao" type="number" name="porcaoEmb" placeholder="Porção por embalagem" id="">
