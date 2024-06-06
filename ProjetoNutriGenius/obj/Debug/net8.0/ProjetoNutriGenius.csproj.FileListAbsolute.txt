@@ -21,9 +21,7 @@ C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-
 C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProjetoNutriGenius.props
 C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProjetoNutriGenius.props
 C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\scopedcss\bundle\ProjetoNutriGenius.styles.css
-C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\scopedcss\projectbundle\ProjetoNutriGenius.bundle.scp.css
 C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\ProjetoNutriGenius.dll
 C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\refint\ProjetoNutriGenius.dll
 C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\ProjetoNutriGenius.pdb
@@ -72,7 +70,6 @@ C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-
 C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\ProjetoNutriGenius.csproj.AssemblyReference.cache
 C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\ProjetoN.C679C0DB.Up2Date
 <<<<<<< HEAD
-C:\Users\hmben\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\scopedcss\Views\Home\Index.cshtml.rz.scp.css
 =======
 C:\Users\55129\Desktop\Projeto\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\ProjetoNutriGenius.csproj.AssemblyReference.cache
 C:\Users\55129\Desktop\Projeto\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\ProjetoNutriGenius.GeneratedMSBuildEditorConfig.editorconfig

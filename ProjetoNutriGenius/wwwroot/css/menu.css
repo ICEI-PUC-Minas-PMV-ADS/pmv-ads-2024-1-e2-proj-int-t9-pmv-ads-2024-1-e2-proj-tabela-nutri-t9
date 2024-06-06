@@ -1,0 +1,68 @@
+.menuPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+  }
+  
+  .menu1 {
+    display: flex;
+  }
+  
+  .menu2 {
+    display: flex;
+  }
+  
+  .qdPerfil {
+    width: 400px;
+    height: 600px;
+    margin: 5px;
+    background-color: #E5AB7E;
+    display: grid;
+    align-content: center;
+    place-items: center;
+    border: 10px;
+    border-style:solid;
+    border-radius: 15px;
+  }
+  
+  .qdItemCadastro {
+    width: 400px;
+    height: 600px;
+    margin: 5px;
+    margin-right: 1px;
+    background-color: #E5AB7E;
+    display: grid;
+    align-content: center;
+    place-items: center;
+    border: 10px;
+    border-style:solid;
+    border-radius: 15px;
+  }
+  
+  .qdCadastroMp {
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    background-color: #E5AB7E;
+    display: grid;
+    align-content: center;
+    place-items: center;
+    border: 10px;
+    border-style:solid;
+    border-radius: 15px;
+  
+  }
+  
+  .qdCadastroReceita {
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    background-color: #E5AB7E;
+    display: grid;
+    align-content: center;
+    place-items: center;
+    border: 10px;
+    border-style:solid;
+    border-radius: 15px;
+  }

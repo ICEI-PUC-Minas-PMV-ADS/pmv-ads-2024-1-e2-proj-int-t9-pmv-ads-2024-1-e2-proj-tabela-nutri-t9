@@ -13,13 +13,13 @@ function criarNav() {
 function retornarNav() {
 
     return `<nav class="navbar">
-    <a> <img class="logo" src="/docs/img/Logo.png"></a>
+    <a><img class="logo" src="/img/Logo.png" style="width: 150px; height: 30px;"></a>
     <ul class="menu">
-        <li><a href="#">Página Inicial</a></li>
+        <li><a href="/Menu">Página Inicial</a></li>
         <li><a href="#">Como usar?</a></li>
         <li><a href="#">Qual legislação vigente?</a></li>
         <li><a href="#">Sobre Nós</a></li>
-        <li><a href="../Usuario/CadastroUsuario.cshtml">Login</a></li>
+        <li><a href="">Login</a></li>
     </ul>
     </nav>`
 };

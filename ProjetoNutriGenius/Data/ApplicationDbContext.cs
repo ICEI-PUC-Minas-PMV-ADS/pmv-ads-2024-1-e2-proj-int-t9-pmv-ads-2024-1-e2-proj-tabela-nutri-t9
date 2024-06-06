@@ -30,7 +30,7 @@ public class ApplicationDbContext : DbContext
 
         modelBuilder.Entity<ProdutoMateriaPrimaModel>(entity =>
         {
-            entity.HasKey(e => new {e.Produto.NomeProduto, e.MateriaPrima.NomeMateriaPrima});
+            entity.HasKey(e => new {e.MateriaPrima});
             entity.ToTable("produto_materia_prima");
             entity.Property(e => e.Quantidade).HasColumnName("quantidade");
             entity.HasOne(e => e.Produto)
