@@ -42,4 +42,9 @@ app.MapControllerRoute(
     pattern: "CadastroReceita",
     defaults: new { controller = "CadastroReceita", action = "Index" });
 
+    app.MapControllerRoute(
+    name: "Relatorio",
+    pattern: "Relatorio",
+    defaults: new { controller = "Relatorio", action = "Index" });
+
 app.Run();
