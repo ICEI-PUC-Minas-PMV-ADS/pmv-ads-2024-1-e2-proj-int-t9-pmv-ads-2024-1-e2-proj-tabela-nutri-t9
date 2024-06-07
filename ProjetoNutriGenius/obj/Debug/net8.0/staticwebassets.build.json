@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rG6XZz67mb9SI15VWoolil0/92YipNt0KUZwA9VCkG0=",
+  "Hash": "l0qt7Z6sCktzGXMb+DcmddxafnekUMIp1wJjsIuGU5c=",
   "Source": "ProjetoNutriGenius",
   "BasePath": "_content/ProjetoNutriGenius",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\menu.css"
+    },
+    {
+      "Identity": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\wwwroot\\css\\relatorio.css",
+      "SourceId": "ProjetoNutriGenius",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\wwwroot\\",
+      "BasePath": "_content/ProjetoNutriGenius",
+      "RelativePath": "css/relatorio.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\relatorio.css"
     },
     {
       "Identity": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\wwwroot\\css\\Shared\\_Layout.css",
@@ -281,6 +300,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\menu.js"
+    },
+    {
+      "Identity": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\wwwroot\\js\\relatorio.js",
+      "SourceId": "ProjetoNutriGenius",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\wwwroot\\",
+      "BasePath": "_content/ProjetoNutriGenius",
+      "RelativePath": "js/relatorio.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\relatorio.js"
     },
     {
       "Identity": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\wwwroot\\js\\Shared\\_Layout.js",
