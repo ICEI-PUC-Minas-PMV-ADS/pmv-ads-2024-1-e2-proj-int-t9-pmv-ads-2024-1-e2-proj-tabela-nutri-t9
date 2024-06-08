@@ -23,19 +23,25 @@ h2 {
   margin-left: 10px;
 }
 
-input:disabled {
+.infoNutri {
   height: auto;
   width: 80px;
   text-align: center;
 }
 
 .nomeMP {
-  width: 500px;
+  width: 480px;
+  height: 20px;
+}
+
+.nomeReceita {
+  width: 360px;
 }
 
 .quantidadeMP {
   text-align: center;
   width: 100px;
+  height: 20px;
 }
 
 select {
@@ -50,6 +56,12 @@ select {
   justify-content: center;
   background-color: white;
   width: auto;
+  margin-top: 10px;
+}
+
+.porcao {
+  margin-left: 10px;
+  text-align: center;
 }
 
 .section2 {
@@ -58,14 +70,20 @@ select {
   width: 85vw;
 }
 
+.field {
+  display: flex;
+  margin-bottom: 90px;
+}
+
 .modoPreparo {
   width: 600px;
-  height: 510px;
+  height: 530px;
+
 }
 
 .conservacao {
   width: 500px;
-  height: 510px;
+  height: 530px;
 }
 
 textarea {

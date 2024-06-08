@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="~/css/Shared/_Layout.css" asp-append-version="true" />
   <link rel="stylesheet" href="~/css/cadastroReceita.css" asp-append-version="true" />
   <link rel="stylesheet" href="~/css/tabelaNutri.css" asp-append-version="true" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <title>Cadastro de Receita</title>
 </head>
 
@@ -28,33 +32,40 @@
             <option value="semiacabado">Semiacabado</option>
             <option value="acabado">Acabado</option>
           </select>
-
-          <button type="button" id="add-btn" onclick="addMateria()">Adicionar Matéria-Prima</button>
+          <input class="nomeReceita" type="text" name="nomeReceita" placeholder="Nome da Receita" id="">
           <button type="submit">Salvar</button>
         </div>
 
         <div id="material-list">
+
           <div class="material-item">
-            <input class="nomeMP" type="text" name="nomeMP" placeholder="Nome da Matéria-Prima" required>
-            <input class="quantidadeMP" type="number" name="quantidadeMP" placeholder="Quant. (g)" required>
-            <button type="button" class="remove-btn" onclick="removeMateria(this)">Remover</button>
-            <input type="number" name="" placeholder="Kcal" disabled id="">
-            <input type="number" name="" placeholder="CHO" disabled id="">
-            <input type="number" name="" placeholder="Açúc. Total" disabled id="">
-            <input type="number" name="" placeholder="Açúc. Add." disabled id="">
-            <input type="number" name="" placeholder="PTN" disabled id="">
-            <input type="number" name="" placeholder="G. Totais" disabled id="">
-            <input type="number" name="" placeholder="G. Sat." disabled id="">
-            <input type="number" name="" placeholder="G.Trans" disabled id="">
-            <input type="number" name="" placeholder="Fibra" disabled id="">
-            <input type="number" name="" placeholder="Sódio" disabled id="">
+            <select name="nomesMpFiltro" id="nomesMpFiltro" class="select2 nomeMP"
+              placeholder="Selecione a Matéria-Prima">
+            </select>
+            <input class="quantidadeMP" type="text" name="quantidadeMP" placeholder="Quant. (g)" required>
+            <button type="button" id="add-btn" onclick="addMateria()">Adicionar</button>
+
+            <input class="infoNutri" type="number" name="valorEnergetico" placeholder="Kcal" disabled id="">
+            <input class="infoNutri" type="number" name="carboidratos" placeholder="CHO" disabled id="">
+            <input class="infoNutri" type="number" name="acucaresTotais" placeholder="Açúc. Total" disabled id="">
+            <input class="infoNutri" type="number" name="acucaresAdicionados" placeholder="Açúc. Add." disabled id="">
+            <input class="infoNutri" type="number" name="proteinas" placeholder="PTN" disabled id="">
+            <input class="infoNutri" type="number" name="gordurasTotais" placeholder="G. Totais" disabled id="">
+            <input class="infoNutri" type="number" name="gordurasSaturadas" placeholder="G. Sat." disabled id="">
+            <input class="infoNutri" type="number" name="gordurasTrans" placeholder="G.Trans" disabled id="">
+            <input class="infoNutri" type="number" name="fibraAlimentar" placeholder="Fibra" disabled id="">
+            <input class="infoNutri" type="number" name="sodio" placeholder="Sódio" disabled id="">
+
           </div>
+
         </div>
       </fieldset>
     </form>
-    <fieldset>
+    <fieldset class="field">
       <div class="section2">
         <fieldset>
+          <input class="porcao" type="number" name="porcaoEmb" placeholder="Porção por embalagem" id="">
+          <input class="porcao" type="number" name="porcao" placeholder="Porção" id="">
           <legend>
             <h2>TABELA</h2>
           </legend>
@@ -91,7 +102,7 @@
   </div>
 
   <script src="~/js/cadastroReceita.js" asp-append-version="true"></script>
-  
+
 </body>
 
 </html>

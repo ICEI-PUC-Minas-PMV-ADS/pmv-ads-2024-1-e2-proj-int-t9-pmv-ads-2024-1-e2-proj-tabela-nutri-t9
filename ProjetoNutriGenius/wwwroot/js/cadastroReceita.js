@@ -1,31 +1,94 @@
+$(document).ready(function () {
+    $('.select2').select2();
+});
+
+let todasMps = [];
+filtrarMP()
+criarTabela();
+
 function addMateria() {
     const materialList = document.getElementById('material-list');
     const newItem = document.createElement('div');
     newItem.classList.add('material-item');
     newItem.innerHTML = `
-  <input class="nomeMP" type="text" name="nomeMP" placeholder="Nome da Matéria-Prima" required>
-  <input class="quantidadeMP" type="number" name="quantidadeMP" placeholder="Quant. (Kg)" required>
+  <input class="nomeMP" type="text" name="nomeMP" disabled id="">
+  <input class="quantidadeMP" type="number" name="quantidadeMP" disabled id="">
   <button type="button" class="remove-btn" onclick="removeMateria(this)">Remover</button>
-  <input type="number" name="" placeholder="Kcal" disabled id="">
-  <input type="number" name="" placeholder="CHO" disabled id="">
-  <input type="number" name="" placeholder="Açúc. Total" disabled id="">
-  <input type="number" name="" placeholder="Açúc. Add." disabled id="">
-  <input type="number" name="" placeholder="PTN" disabled id="">
-  <input type="number" name="" placeholder="G. Totais" disabled id="">
-  <input type="number" name="" placeholder="G. Sat." disabled id="">
-  <input type="number" name="" placeholder="G.Trans" disabled id="">
-  <input type="number" name="" placeholder="Fibra" disabled id="">
-  <input type="number" name="" placeholder="Sódio" disabled id="">
+  <input class="infoNutri" type="number" name="valorEnergetico" placeholder="Kcal" disabled id="">
+  <input class="infoNutri" type="number" name="carboidratos" placeholder="CHO" disabled id="">
+  <input class="infoNutri" type="number" name="acucaresTotais" placeholder="Açúc. Total" disabled id="">
+  <input class="infoNutri" type="number" name="acucaresAdicionados" placeholder="Açúc. Add." disabled id="">
+  <input class="infoNutri" type="number" name="proteinas" placeholder="PTN" disabled id="">
+  <input class="infoNutri" type="number" name="gordurasTotais" placeholder="G. Totais" disabled id="">
+  <input class="infoNutri" type="number" name="gordurasSaturadas" placeholder="G. Sat." disabled id="">
+  <input class="infoNutri" type="number" name="gordurasTrans" placeholder="G.Trans" disabled id="">
+  <input class="infoNutri" type="number" name="fibraAlimentar" placeholder="Fibra" disabled id="">
+  <input class="infoNutri" type="number" name="sodio" placeholder="Sódio" disabled id="">
     `;
     materialList.appendChild(newItem);
+
+    let mpFiltrada = {};
+    let mpSelecionado = document.getElementById('nomesMpFiltro').value;
+    let quantidadeMP = document.querySelector("input[name='quantidadeMP']").value;
+    todasMps.forEach((mp) => {
+        if (mpSelecionado == mp.nomeMateriaPrima) {
+            mpFiltrada = mp;
+        }
+    });
+
+    console.log(mpFiltrada);
+
+    let inputs = newItem.querySelectorAll("input");
+
+    for (let i = 0; i < inputs.length; i++) {
+        const element = inputs[i];
+        console.log(element.name);
+        if (element.name == 'nomeMP') {
+            element.value = mpFiltrada.nomeMateriaPrima;
+        }
+        if (element.name == 'quantidadeMP') {
+            element.value = quantidadeMP;
+        }
+        if (element.name == 'valorEnergetico') {
+            element.value = mpFiltrada.valorEnergetico;
+        }
+        if (element.name == 'carboidratos') {
+            element.value = mpFiltrada.carboidratos;
+        }
+        if (element.name == 'acucaresTotais') {
+            element.value = mpFiltrada.acucaresTotais;
+        }
+        if (element.name == 'acucaresAdicionados') {
+            element.value = mpFiltrada.acucaresAdicionados;
+        }
+        if (element.name == 'proteinas') {
+            element.value = mpFiltrada.proteinas;
+        }
+        if (element.name == 'gordurasTotais') {
+            element.value = mpFiltrada.gordurasTotais;
+        }
+        if (element.name == 'gordurasSaturadas') {
+            element.value = mpFiltrada.gordurasSaturadas;
+        }
+        if (element.name == 'gordurasTrans') {
+            element.value = mpFiltrada.gordurasTrans;
+        }
+        if (element.name == 'fibraAlimentar') {
+            element.value = mpFiltrada.fibraAlimentar;
+        }
+        if (element.name == 'sodio') {
+            element.value = mpFiltrada.sodio;
+        }
+
+        if (!isNaN(element.value) && element.name != 'quantidadeMP')
+            element.value *= quantidadeMP / 100;
+    }
 }
 
 function removeMateria(button) {
     const itemToRemove = button.parentNode;
     itemToRemove.parentNode.removeChild(itemToRemove);
 }
-
-criarTabela();
 
 function criarTabela() {
     let tabelaDiv = document.querySelector('.tabela')
@@ -134,4 +197,45 @@ function trocarValor(tabela, campo, valor) {
 
     let tabelaSub = tabela.replace(campo, valor)
     return tabelaSub;
+}
+
+function filtrarMP() {
+    const selectElement = document.getElementById('nomesMpFiltro');
+    selectElement.innerHTML = '';
+    //let nomeFiltrado = document.getElementById('nomeMP').value;
+
+    //console.log("nomeMP",nomeFiltrado);
+
+
+    let options = [];
+    fetch('http://localhost:5292/api/materia_prima', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+        .then((resp) => resp.json())
+        .then((mps) => {
+
+            todasMps = mps;
+
+            mps.forEach((mp) => {
+                options.push(mp.nomeMateriaPrima);
+            });
+
+            options.forEach(optionText => {
+                const optionElement = document.createElement('option');
+                optionElement.value = optionText;
+                optionElement.textContent = optionText;
+                selectElement.appendChild(optionElement);
+            });
+
+
+        });
+
+    console.log(options);
+
+
+
+
 }
