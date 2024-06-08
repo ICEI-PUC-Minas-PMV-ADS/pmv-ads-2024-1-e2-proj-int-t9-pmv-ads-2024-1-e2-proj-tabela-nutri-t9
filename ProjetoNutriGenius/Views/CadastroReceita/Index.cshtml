@@ -1,0 +1,97 @@
+@{
+  Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="~/css/Shared/_Layout.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/cadastroReceita.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/tabelaNutri.css" asp-append-version="true" />
+  <title>Cadastro de Receita</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <form>
+      <fieldset class="material-form">
+        <legend>
+          <h1>CADASTRO DE RECEITAS</h1>
+        </legend>
+
+        <div>
+          <select name="tipoMP" id="">
+            <option value="semiacabado">Semiacabado</option>
+            <option value="acabado">Acabado</option>
+          </select>
+
+          <button type="button" id="add-btn" onclick="addMateria()">Adicionar Matéria-Prima</button>
+          <button type="submit">Salvar</button>
+        </div>
+
+        <div id="material-list">
+          <div class="material-item">
+            <input class="nomeMP" type="text" name="nomeMP" placeholder="Nome da Matéria-Prima" required>
+            <input class="quantidadeMP" type="number" name="quantidadeMP" placeholder="Quant. (g)" required>
+            <button type="button" class="remove-btn" onclick="removeMateria(this)">Remover</button>
+            <input type="number" name="" placeholder="Kcal" disabled id="">
+            <input type="number" name="" placeholder="CHO" disabled id="">
+            <input type="number" name="" placeholder="Açúc. Total" disabled id="">
+            <input type="number" name="" placeholder="Açúc. Add." disabled id="">
+            <input type="number" name="" placeholder="PTN" disabled id="">
+            <input type="number" name="" placeholder="G. Totais" disabled id="">
+            <input type="number" name="" placeholder="G. Sat." disabled id="">
+            <input type="number" name="" placeholder="G.Trans" disabled id="">
+            <input type="number" name="" placeholder="Fibra" disabled id="">
+            <input type="number" name="" placeholder="Sódio" disabled id="">
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <fieldset>
+      <div class="section2">
+        <fieldset>
+          <legend>
+            <h2>TABELA</h2>
+          </legend>
+          <div class="tabelaCentral">
+            <section class="tabela"></section>
+          </div>
+        </fieldset>
+
+        <div>
+          <fieldset class="modoPreparo">
+            <legend>
+              <h2>MODO DE PREPARO</h2>
+            </legend>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite o modo de preparo..."></textarea>
+          </fieldset>
+        </div>
+
+        <div>
+          <fieldset class="conservacao">
+            <legend>
+              <h2>CONSERVAÇÃO</h2>
+            </legend>
+            <select name="tipoConservacao" id="">
+              <option value="refrigerada">Geladeira / Estufa refrigerada</option>
+              <option value="congelada">Freezer / Congelador</option>
+              <option value="congeladaAberta">Freezer/Congelador (Aberto)</option>
+              <option value="estufa">Estufa quente</option>
+            </select>
+          </fieldset>
+        </div>
+
+      </div>
+    </fieldset>
+  </div>
+
+  <script src="~/js/cadastroReceita.js" asp-append-version="true"></script>
+  
+</body>
+
+</html>

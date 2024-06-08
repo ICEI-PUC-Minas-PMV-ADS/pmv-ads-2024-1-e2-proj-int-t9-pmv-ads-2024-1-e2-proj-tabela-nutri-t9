@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leoro\\Downloads\\tabela-nutri\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj": {}
+    "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leoro\\Downloads\\tabela-nutri\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj": {
+    "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leoro\\Downloads\\tabela-nutri\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
+        "projectUniqueName": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
         "projectName": "ProjetoNutriGenius",
-        "projectPath": "C:\\Users\\leoro\\Downloads\\tabela-nutri\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
-        "packagesPath": "C:\\Users\\leoro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leoro\\Downloads\\tabela-nutri\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\obj\\",
+        "projectPath": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
+        "packagesPath": "C:\\Users\\hmben\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\leoro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hmben\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

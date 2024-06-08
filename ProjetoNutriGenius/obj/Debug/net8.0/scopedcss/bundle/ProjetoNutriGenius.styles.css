@@ -48,13 +48,13 @@ footer[b-6x4slntgc4] {
 }
 
 button[b-6x4slntgc4] {
-  background-color: #0F482F;
-  color: #E5AB7E;
+  background-color: #EBE2D9;
+  color: black
 }
 
 button:hover[b-6x4slntgc4] {
-  background-color: #779E39;
-  color: #EBE2D9;
+  background-color: #0F482F; 
+  color: #E5AB7E; 
 }
 
 .logo[b-6x4slntgc4] {

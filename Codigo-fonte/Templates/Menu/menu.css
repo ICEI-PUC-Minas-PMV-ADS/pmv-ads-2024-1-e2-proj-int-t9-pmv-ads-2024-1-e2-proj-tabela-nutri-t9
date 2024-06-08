@@ -14,23 +14,29 @@
 }
 
 .qdPerfil {
-  width: 300px;
+  width: 400px;
   height: 600px;
   margin: 5px;
   background-color: #E5AB7E;
   display: grid;
+  align-content: center;
   place-items: center;
+  border: 10px;
+  border-style:solid;
   border-radius: 15px;
 }
 
 .qdItemCadastro {
-  width: 300px;
+  width: 400px;
   height: 600px;
   margin: 5px;
   margin-right: 1px;
   background-color: #E5AB7E;
   display: grid;
+  align-content: center;
   place-items: center;
+  border: 10px;
+  border-style:solid;
   border-radius: 15px;
 }
 
@@ -40,7 +46,10 @@
   margin: 10px;
   background-color: #E5AB7E;
   display: grid;
+  align-content: center;
   place-items: center;
+  border: 10px;
+  border-style:solid;
   border-radius: 15px;
 
 }
@@ -51,6 +60,9 @@
   margin: 10px;
   background-color: #E5AB7E;
   display: grid;
+  align-content: center;
   place-items: center;
+  border: 10px;
+  border-style:solid;
   border-radius: 15px;
 }
