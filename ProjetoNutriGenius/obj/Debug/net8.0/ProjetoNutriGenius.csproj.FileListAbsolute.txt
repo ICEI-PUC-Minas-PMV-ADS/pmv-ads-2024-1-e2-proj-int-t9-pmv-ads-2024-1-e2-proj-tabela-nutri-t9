@@ -208,9 +208,7 @@ C:\Users\leoro\Downloads\tabela-nutri\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024
 C:\Users\leoro\Downloads\tabela-nutri\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProjetoNutriGenius.props
 C:\Users\leoro\Downloads\tabela-nutri\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProjetoNutriGenius.props
 C:\Users\leoro\Downloads\tabela-nutri\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\leoro\Downloads\tabela-nutri\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\leoro\Downloads\tabela-nutri\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\scopedcss\bundle\ProjetoNutriGenius.styles.css
-C:\Users\leoro\Downloads\tabela-nutri\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\scopedcss\projectbundle\ProjetoNutriGenius.bundle.scp.css
 C:\Users\leoro\Downloads\tabela-nutri\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\ProjetoN.C679C0DB.Up2Date
 C:\Users\leoro\Downloads\tabela-nutri\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\ProjetoNutriGenius.dll
 C:\Users\leoro\Downloads\tabela-nutri\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\ProjetoNutriGenius\obj\Debug\net8.0\refint\ProjetoNutriGenius.dll
