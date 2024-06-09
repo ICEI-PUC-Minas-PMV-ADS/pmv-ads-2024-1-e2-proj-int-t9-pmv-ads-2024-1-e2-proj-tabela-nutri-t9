@@ -6,13 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-<<<<<<< HEAD
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.5" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
   </ItemGroup>
 
-=======
->>>>>>> 41b1dab8af167fed35ea28bbe869a3cdb8dc717b
 </Project>
