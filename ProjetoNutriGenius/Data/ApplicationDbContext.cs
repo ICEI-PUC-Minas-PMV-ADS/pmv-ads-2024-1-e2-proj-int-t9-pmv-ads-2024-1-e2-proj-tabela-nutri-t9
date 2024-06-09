@@ -2,10 +2,11 @@ using Microsoft.EntityFrameworkCore;
 
 public class ApplicationDbContext : DbContext
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IConfiguration configuration)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
     {
     }
+
     public DbSet<MateriaPrimaModel> materiaPrimaModel { get; set; }
     public DbSet<UsuarioModel> UsuarioRepository { get; set; }
 
@@ -13,7 +14,7 @@ public class ApplicationDbContext : DbContext
     {
         modelBuilder.Entity<MateriaPrimaModel>(entity =>
         {
-            entity.HasKey(e => new {e.NomeMateriaPrima});
+            entity.HasKey(e => new { e.NomeMateriaPrima });
             entity.ToTable("materia_prima");
             entity.Property(e => e.NomeMateriaPrima).HasColumnName("nome_materia_prima");
             entity.Property(e => e.ValorEnergetico).HasColumnName("valor_energetico");
@@ -45,19 +46,19 @@ public class ApplicationDbContext : DbContext
 
         modelBuilder.Entity<ProdutoModel>(entity =>
         {
-            entity.HasKey(e => new {e.NomeProduto});
+            entity.HasKey(e => new { e.NomeProduto });
             entity.ToTable("produto");
             entity.Property(e => e.NomeProduto).HasColumnName("nome_produto");
             entity.Property(e => e.CodigoProduto).HasColumnName("codigo_produto");
             entity.HasOne(e => e.Usuario);
-//                .WithMany(e => e.Produto)
-  //              .HasForeignKey(e => e.Usuario.Email)
-    //            .OnDelete(DeleteBehavior.Cascade);
+                //.WithMany(e => e.Produto)
+                //.HasForeignKey(e => e.Usuario.Email)
+                //.OnDelete(DeleteBehavior.Cascade);
         });
 
         modelBuilder.Entity<UsuarioModel>(entity =>
         {
-            entity.HasKey(e => new {e.Email});
+            entity.HasKey(e => new { e.Email });
             entity.ToTable("usuario"); 
             entity.Property(e => e.NomeCompleto).IsRequired().HasColumnName("nome_completo");
             entity.Property(e => e.Email).IsRequired().HasColumnName("email");
@@ -73,6 +74,5 @@ public class ApplicationDbContext : DbContext
             entity.Property(e => e.Bairro).HasColumnName("bairro");
             entity.Property(e => e.Rua).HasColumnName("rua");
         });        
-
     }
 }
