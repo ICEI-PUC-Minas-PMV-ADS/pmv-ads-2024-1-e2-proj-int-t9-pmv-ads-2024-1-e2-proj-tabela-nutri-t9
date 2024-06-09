@@ -16,7 +16,7 @@
 
 
 -- Copiando estrutura do banco de dados para nutrigenius_db
-CREATE DATABASE IF NOT EXISTS `nutrigenius_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE IF NOT EXISTS `nutrigenius_db`;
 USE `nutrigenius_db`;
 
 -- Copiando estrutura para tabela nutrigenius_db.materia_prima
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `materia_prima` (
   `fibra_alimentar` float DEFAULT NULL,
   `sodio` int DEFAULT NULL,
   PRIMARY KEY (`nome_materia_prima`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB;
 
 -- Copiando dados para a tabela nutrigenius_db.materia_prima: ~0 rows (aproximadamente)
 REPLACE INTO `materia_prima` (`nome_materia_prima`, `valor_energetico`, `carboidratos`, `acucares_totais`, `acucares_adicionados`, `proteinas`, `gorduras_totais`, `gorduras_saturadas`, `gorduras_trans`, `fibra_alimentar`, `sodio`) VALUES
@@ -644,7 +644,7 @@ CREATE TABLE IF NOT EXISTS `produto` (
   PRIMARY KEY (`nome_produto`),
   KEY `email` (`email`),
   CONSTRAINT `produto_ibfk_1` FOREIGN KEY (`email`) REFERENCES `usuario` (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB;
 
 -- Copiando dados para a tabela nutrigenius_db.produto: ~0 rows (aproximadamente)
 
@@ -653,19 +653,33 @@ CREATE TABLE IF NOT EXISTS `produto_materia_prima` (
   `nome_produto` varchar(255) DEFAULT NULL,
   `nome_materia_prima` varchar(255) DEFAULT NULL,
   `quantidade` double DEFAULT NULL,
+  PRIMARY KEY (`nome_materia_prima`,`nome_produto`),
   KEY `nome_materia_prima` (`nome_materia_prima`),
-  CONSTRAINT `produto_materia_prima_ibfk_1` FOREIGN KEY (`nome_materia_prima`) REFERENCES `materia_prima` (`nome_materia_prima`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  CONSTRAINT `produto_materia_prima_ibfk_1` FOREIGN KEY (`nome_materia_prima`) REFERENCES `materia_prima` (`nome_materia_prima`),
+  KEY `nome_produto` (`nome_produto`),
+  CONSTRAINT `produto_materia_prima_ibfk_2` FOREIGN KEY (`nome_produto`) REFERENCES `produto` (`nome_produto`)
+) ENGINE=InnoDB;
 
 -- Copiando dados para a tabela nutrigenius_db.produto_materia_prima: ~0 rows (aproximadamente)
 
 -- Copiando estrutura para tabela nutrigenius_db.usuario
 CREATE TABLE IF NOT EXISTS `usuario` (
   `email` varchar(255) NOT NULL,
-  `nome_usuário` varchar(255) DEFAULT NULL,
+  `nome_usuario` varchar(255) DEFAULT NULL,
   `senha` varchar(255) DEFAULT NULL,
+  `confirme_senha` varchar(255) DEFAULT NULL,
+  `nome_completo` varchar(255) DEFAULT NULL,
+  `celular` varchar(255) DEFAULT NULL,
+  `razao_social` varchar(255) DEFAULT NULL,
+  `cadastro_nacional` varchar(255) DEFAULT NULL,
+  `cep` varchar(255) DEFAULT NULL,
+  `numero` varchar(255) DEFAULT NULL,
+  `estado` varchar(255) DEFAULT NULL,
+  `cidade` varchar(255) DEFAULT NULL,
+  `bairro` varchar(255) DEFAULT NULL,
+  `rua` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB;
 
 -- Copiando dados para a tabela nutrigenius_db.usuario: ~0 rows (aproximadamente)
 
