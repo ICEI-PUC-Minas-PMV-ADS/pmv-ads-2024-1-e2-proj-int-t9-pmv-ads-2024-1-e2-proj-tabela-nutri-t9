@@ -3,6 +3,10 @@ body {
     text-align: justify;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
     background-color: #EBE2D9; /* Cor de fundo da página */
 }
 
@@ -41,20 +45,9 @@ footer {
     text-align: center;
     position: fixed;
     bottom: 0;
-    margin-top: 10px;
-   
-   
+    width: 100%;
 }
 
-button {
-    background-color: #EBE2D9;
-    color: black
-}
-
-button:hover {
-    background-color: #0F482F; 
-    color: #E5AB7E; 
-}
 
 .logo {
     font-size: 24px;

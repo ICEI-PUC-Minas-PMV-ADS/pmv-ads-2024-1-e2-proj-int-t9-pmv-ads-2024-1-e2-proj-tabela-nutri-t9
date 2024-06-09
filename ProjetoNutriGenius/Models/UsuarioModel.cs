@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //using System.ComponentModel.DataAnnotations;
 //using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
@@ -60,3 +61,16 @@ public class UsuarioModel
 
         public ICollection<ProdutoModel> ? Produto {get; set;} = new List<ProdutoModel>();
     }
+=======
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+[Table("usuario")]
+public class UsuarioModel
+{
+    [Key]
+    public string email { get; set; }
+    public string nome_usuario { get; set; }
+    public string senha { get; set; }
+}
+>>>>>>> 41b1dab8af167fed35ea28bbe869a3cdb8dc717b

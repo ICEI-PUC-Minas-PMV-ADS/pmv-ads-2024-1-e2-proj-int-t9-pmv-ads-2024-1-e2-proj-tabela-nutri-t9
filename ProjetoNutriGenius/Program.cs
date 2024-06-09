@@ -1,14 +1,20 @@
+<<<<<<< HEAD
 using Microsoft.EntityFrameworkCore;
 
+=======
+>>>>>>> 41b1dab8af167fed35ea28bbe869a3cdb8dc717b
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+<<<<<<< HEAD
 var connectionString = "Server=localhost;Port=3306;Database=nutrigenius_db;Uid=root;";
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 21))).LogTo(Console.WriteLine, LogLevel.Information));
 
 builder.Services.AddControllers();
+=======
+>>>>>>> 41b1dab8af167fed35ea28bbe869a3cdb8dc717b
 
 var app = builder.Build();
 
@@ -21,7 +27,10 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 41b1dab8af167fed35ea28bbe869a3cdb8dc717b
 app.UseStaticFiles();
 
 app.UseRouting();
@@ -32,6 +41,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+<<<<<<< HEAD
 app.MapControllerRoute(
     name: "Menu",
     pattern: "Menu",
@@ -47,4 +57,6 @@ name: "Relatorio",
 pattern: "Relatorio",
 defaults: new { controller = "Relatorio", action = "Index" });
 
+=======
+>>>>>>> 41b1dab8af167fed35ea28bbe869a3cdb8dc717b
 app.Run();
