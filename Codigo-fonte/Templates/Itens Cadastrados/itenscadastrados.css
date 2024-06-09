@@ -1,0 +1,77 @@
+.container {
+    display: grid;
+    justify-items: center;
+    width: auto;
+  }
+  
+  .material-form {
+    display: grid;
+    justify-items: left;
+    width: 85vw;
+    margin: 30px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .material-item {
+    margin-bottom: 10px;
+  }
+  
+  .remove-btn {
+    margin-left: 10px;
+  }
+  
+  input:disabled {
+    height: auto;
+    width: 80px;
+    text-align: center;
+  }
+  
+  .nomeMP {
+    width: 500px;
+  }
+  
+  .quantidadeMP {
+    text-align: center;
+    width: 100px;
+  }
+  
+  select {
+    height: auto;
+    width: auto;
+    margin-bottom: 10px;
+    border: solid 2px;
+  }
+  
+  .tabelaCentral {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: auto;
+  }
+  
+  .section2 {
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+  }
+  
+  .modoPreparo {
+    width: 600px;
+    height: 510px;
+  }
+  
+  .conservacao {
+    width: 500px;
+    height: 510px;
+  }
+  
+  textarea {
+    width: 600px;
+    height: 415px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
