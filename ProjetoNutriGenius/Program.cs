@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 var connectionString = "Server=localhost;Port=3306;Database=nutrigenius_db;Uid=root;";
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 21))));
+    options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 21))).LogTo(Console.WriteLine, LogLevel.Information));
 
 builder.Services.AddControllers();
 
@@ -42,9 +42,9 @@ app.MapControllerRoute(
     pattern: "CadastroReceita",
     defaults: new { controller = "CadastroReceita", action = "Index" });
 
-    app.MapControllerRoute(
-    name: "Relatorio",
-    pattern: "Relatorio",
-    defaults: new { controller = "Relatorio", action = "Index" });
+app.MapControllerRoute(
+name: "Relatorio",
+pattern: "Relatorio",
+defaults: new { controller = "Relatorio", action = "Index" });
 
 app.Run();

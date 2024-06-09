@@ -18,12 +18,7 @@ namespace WebApp.Controllers
         {
             try
             {
-                var materiaPrima = new MateriaPrimaModel
-                {
-                    NomeMateriaPrima = materiaPrimaModel.NomeMateriaPrima
-                };
-
-                _context.materiaPrimaModel.Add(materiaPrimaModel);
+                _context.MateriaPrimaRepository.Add(materiaPrimaModel);
                 _context.SaveChanges();
 
                 return Ok();
@@ -37,7 +32,7 @@ namespace WebApp.Controllers
         [HttpGet("{nome}")] // Retorna o registo filtrando-o pelo nome
         public IActionResult GetMateriaPrimaByNome(string nome)
         {
-            var materiaPrima = _context.materiaPrimaModel.FirstOrDefault(p => p.NomeMateriaPrima == nome);
+            var materiaPrima = _context.MateriaPrimaRepository.FirstOrDefault(p => p.NomeMateriaPrima == nome);
             if (materiaPrima == null)
             {
                 return NotFound();
@@ -49,7 +44,7 @@ namespace WebApp.Controllers
         [HttpGet("filtro/{nome}")] // Retorna o registo filtrando-o pelo nome
         public IActionResult GetMateriaPrimaFiltrado(string nome)
         {
-            var materiaPrima = _context.materiaPrimaModel.Where(p => p.NomeMateriaPrima.Contains(nome));
+            var materiaPrima = _context.MateriaPrimaRepository.Where(p => p.NomeMateriaPrima.Contains(nome));
             if (materiaPrima == null)
             {
                 return NotFound();
@@ -61,7 +56,7 @@ namespace WebApp.Controllers
         [HttpGet]
         public IActionResult GetAllMateriaPrima() // Retorna todo o registro
         {
-            var materiaPrimaModel = _context.materiaPrimaModel;
+            var materiaPrimaModel = _context.MateriaPrimaRepository.ToList();
             if (materiaPrimaModel == null)
             {
                 return NotFound();

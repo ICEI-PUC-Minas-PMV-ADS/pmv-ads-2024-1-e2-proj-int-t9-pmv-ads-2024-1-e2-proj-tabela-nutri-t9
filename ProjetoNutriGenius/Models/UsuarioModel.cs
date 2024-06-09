@@ -5,33 +5,43 @@ using System.ComponentModel.DataAnnotations;
 //[Table("usuario")]
 public class UsuarioModel
    {
-        public UsuarioModel()
+        public UsuarioModel(string email)
         {
-            NomeCompleto = string.Empty;
-            Email = string.Empty;
+            Email = email;
+            Produto = new List<ProdutoModel>();
+            NomeUsuario = string.Empty;
             Senha = string.Empty;
             ConfirmeSenha = string.Empty;
+            CNPJ = string.Empty;
+            RazaoSocial = string.Empty;
+            NomeCompleto = string.Empty;
+            Celular = string.Empty;
+            CEP = string.Empty;
+            Numero = string.Empty; 
+            Estado = string.Empty;
+            Cidade = string.Empty;
+            Bairro = string.Empty;
+            Rua = string.Empty;
         }
 
         public string ? CNPJ { get; set; }
 
         public string ? RazaoSocial { get; set; }
 
-        [Required]
-        public string NomeCompleto { get; set; }
+        public string ? NomeUsuario { get; set; }
 
-        [Required]
+        public string ? NomeCompleto { get; set; }
+
+        [Key]
         [EmailAddress]
-        public string ? Email { get; set; }
+        public required string Email { get; set; }
 
         [Phone]
         public string ? Celular { get; set; }
 
-        [Required]
         [DataType(DataType.Password)]
-        public string Senha { get; set; }
+        public string ? Senha { get; set; }
 
-        [Required]
         [DataType(DataType.Password)]
         [Compare("Senha", ErrorMessage = "A senha e a confirmação de senha não correspondem.")]
         public string ? ConfirmeSenha { get; set; }
@@ -47,4 +57,6 @@ public class UsuarioModel
         public string ? Bairro { get; set; }
 
         public string ? Rua { get; set; }
+
+        public ICollection<ProdutoModel> ? Produto {get; set;} = new List<ProdutoModel>();
     }

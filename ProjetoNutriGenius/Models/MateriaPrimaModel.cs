@@ -1,14 +1,11 @@
 //using System.ComponentModel.DataAnnotations;
-//using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-
-//[Table("materia_prima")]
 public class MateriaPrimaModel
 {
-//    [Key]
-    [Required]
-    public string ? NomeMateriaPrima { get; set; }
+    [Key]
+    public required string NomeMateriaPrima { get; set; }
     
     public int ? ValorEnergetico { get; set; }
     
@@ -30,7 +27,6 @@ public class MateriaPrimaModel
     
     public int ? Sodio { get; set; }
     
-    [Required]    
     public ICollection<ProdutoMateriaPrimaModel> ? ProdutoMateriaPrima { get; set; } = new List<ProdutoMateriaPrimaModel>();
 }
 
