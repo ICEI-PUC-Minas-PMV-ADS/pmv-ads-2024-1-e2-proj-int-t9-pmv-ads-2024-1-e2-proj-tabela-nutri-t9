@@ -6,7 +6,7 @@ namespace WebApp.Controllers
     [ApiController]
     public class MateriaPrimaController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private ApplicationDbContext _context;
 
         public MateriaPrimaController(ApplicationDbContext context)
         {

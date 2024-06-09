@@ -8,7 +8,7 @@ namespace WebApp.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private ApplicationDbContext _context;
 
         public UsuarioController(ApplicationDbContext context)
         {

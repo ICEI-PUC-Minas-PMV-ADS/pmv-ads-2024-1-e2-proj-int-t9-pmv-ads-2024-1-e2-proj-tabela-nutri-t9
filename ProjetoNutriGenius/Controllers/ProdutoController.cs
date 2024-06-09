@@ -8,7 +8,7 @@ namespace WebApp.Controllers
     [ApiController]
     public class ProdutoController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private ApplicationDbContext _context;
 
         public ProdutoController(ApplicationDbContext context)
         {

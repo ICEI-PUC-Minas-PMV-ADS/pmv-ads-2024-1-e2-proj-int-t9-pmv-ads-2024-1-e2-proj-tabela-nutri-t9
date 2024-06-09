@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
+[Table("produto_materia_prima")]
 public class ProdutoMateriaPrimaModel
 {
     public double ? Quantidade { get; set; }

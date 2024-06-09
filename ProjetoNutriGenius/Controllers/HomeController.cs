@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-using Microsoft.AspNetCore.Mvc;
-
-namespace ProjetoNutriGenius.Controllers;
-public class HomeController : Controller
-{
-    public ViewResult Index()
-    {
-        return View();
-    }
-=======
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ProjetoNutriGenius.Models;
@@ -39,5 +28,4 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
->>>>>>> 41b1dab8af167fed35ea28bbe869a3cdb8dc717b
 }
