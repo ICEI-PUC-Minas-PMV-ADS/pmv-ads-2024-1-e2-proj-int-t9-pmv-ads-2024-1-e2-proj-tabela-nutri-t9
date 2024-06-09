@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itens Cadastrados</title>
+  <link rel="stylesheet" href="CadastroReceita.css">
+  <link rel="stylesheet" href="../Tabela Nutricional/tabelaNutricional.css">
+  <link rel="stylesheet" href="../shared.css">
+</head>
+
+<body>
+
+  <header>
+    <section class="cabecalho"></section>
+  </header>
+
+  <div class="container">
+    <form>
+      <fieldset class="material-form">
+        <legend>
+          <h1>ITENS CADASTRADOS</h1>
+        </legend>
+
+        <div>
+            <span>Tipo de receita:</span>
+            <label>
+                <input type="radio" name="tipo_receita" value="semiacabado">
+                Semiacabado
+            </label>
+            <label>
+                <input type="radio" name="tipo_receita" value="acabado">
+                Acabado
+            </label>
+
+          <button type="submit">Salvar</button>
+        </div>
+        <div>
+            <input type="search" name="Buscar itens" placeholder="Buscar"  id="">
+        </div>
+        <div id="material-list">
+          <div class="material-item">
+            <button type="submit">Editar</button>
+            <input class="nomeMP" type="text" name="nomeMP" placeholder="Nome da Matéria-Prima" disabled>
+            <input class="quantidadeMP" type="number" name="quantidadeMP" placeholder="Quant. (g)" disabled>
+            <input type="number" name="" placeholder="Kcal" disabled id="">
+            <input type="number" name="" placeholder="CHO" disabled id="">
+            <input type="number" name="" placeholder="Açúc. Total" disabled id="">
+            <input type="number" name="" placeholder="Açúc. Add." disabled id="">
+            <input type="number" name="" placeholder="PTN" disabled id="">
+            <input type="number" name="" placeholder="G. Totais" disabled id="">
+            <input type="number" name="" placeholder="G. Sat." disabled id="">
+            <input type="number" name="" placeholder="G.Trans" disabled id="">
+            <input type="number" name="" placeholder="Fibra" disabled id="">
+            <input type="number" name="" placeholder="Sódio" disabled id="">
+            <button type="submit">Imprimir</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+ 
+  </div>
+
+  <footer>
+    <section class="rodape"></section>
+  </footer>
+
+  <script type="module" src="../shared.js"></script>
+  <script src="CadastroReceita.js"></script>
+</body>
+
+</html>
