@@ -12,12 +12,13 @@ public class UsuarioModel
             Senha = string.Empty;
             ConfirmeSenha = string.Empty;
         }
-
         public string ? CNPJ { get; set; }
 
+        [Display(Name = "Razão Social")]
         public string ? RazaoSocial { get; set; }
 
         [Required]
+        [Display(Name = "Nome completo")]
         public string NomeCompleto { get; set; }
 
         [Required]
@@ -34,6 +35,7 @@ public class UsuarioModel
         [Required]
         [DataType(DataType.Password)]
         [Compare("Senha", ErrorMessage = "A senha e a confirmação de senha não correspondem.")]
+        [Display(Name = "Confirme a senha")]
         public string ? ConfirmeSenha { get; set; }
 
         public string ? CEP { get; set; }

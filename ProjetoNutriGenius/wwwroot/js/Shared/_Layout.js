@@ -16,10 +16,10 @@ function retornarNav() {
     <a><img class="logo" src="/img/Logo.png" style="width: 150px; height: 30px;"></a>
     <ul class="menu">
         <li><a href="/Menu">Página Inicial</a></li>
-        <li><a href="#">Como usar?</a></li>
+        <li><a href="/Relatorio">Como usar?</a></li>
         <li><a href="#">Qual legislação vigente?</a></li>
         <li><a href="#">Sobre Nós</a></li>
-        <li><a href="">Login</a></li>
+        <li><a href="/CadastroUsuario">Login</a></li>
     </ul>
     </nav>`
 };
