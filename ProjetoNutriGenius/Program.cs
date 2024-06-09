@@ -57,6 +57,9 @@ name: "Relatorio",
 pattern: "Relatorio",
 defaults: new { controller = "Relatorio", action = "Index" });
 
-=======
->>>>>>> 41b1dab8af167fed35ea28bbe869a3cdb8dc717b
+    app.MapControllerRoute(
+    name: "Usuario",
+    pattern: "Usuario",
+    defaults: new { controller = "Usuario", action = "Index" });
+
 app.Run();

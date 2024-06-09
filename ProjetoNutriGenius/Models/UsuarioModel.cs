@@ -24,13 +24,14 @@ public class UsuarioModel
             Bairro = string.Empty;
             Rua = string.Empty;
         }
-
         public string ? CNPJ { get; set; }
 
+        [Display(Name = "Razão Social")]
         public string ? RazaoSocial { get; set; }
 
         public string ? NomeUsuario { get; set; }
 
+        [Display(Name = "Nome completo")]
         public string ? NomeCompleto { get; set; }
 
         [Key]
@@ -45,6 +46,7 @@ public class UsuarioModel
 
         [DataType(DataType.Password)]
         [Compare("Senha", ErrorMessage = "A senha e a confirmação de senha não correspondem.")]
+        [Display(Name = "Confirme a senha")]
         public string ? ConfirmeSenha { get; set; }
 
         public string ? CEP { get; set; }

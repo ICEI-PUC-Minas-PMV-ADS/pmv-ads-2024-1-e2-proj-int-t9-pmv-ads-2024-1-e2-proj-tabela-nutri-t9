@@ -19,7 +19,7 @@ function retornarNav() {
         <li><a href="/Relatorio">Como usar?</a></li>
         <li><a href="#">Qual legislação vigente?</a></li>
         <li><a href="#">Sobre Nós</a></li>
-        <li><a href="">Login</a></li>
+        <li><a href="/CadastroUsuario">Login</a></li>
     </ul>
     </nav>`
 };
