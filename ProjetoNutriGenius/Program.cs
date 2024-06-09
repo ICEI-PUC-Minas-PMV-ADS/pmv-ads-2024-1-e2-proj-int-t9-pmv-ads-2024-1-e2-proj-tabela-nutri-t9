@@ -47,4 +47,9 @@ app.MapControllerRoute(
     pattern: "Relatorio",
     defaults: new { controller = "Relatorio", action = "Index" });
 
+    app.MapControllerRoute(
+    name: "Usuario",
+    pattern: "Usuario",
+    defaults: new { controller = "Usuario", action = "Index" });
+
 app.Run();
