@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/Shared/_Layout.css" asp-append-version="true" />
+</head>
+
+<body>
+    <header>
+        <section class="cabecalho"></section>
+    </header>
+
+    @RenderBody()
+
+    <footer>
+        <section class="rodape"></section>
+    </footer>
+
+    <script src="~/js/Shared/_Layout.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

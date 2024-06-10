@@ -1,0 +1,10 @@
+body {
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    text-align: justify;
+}

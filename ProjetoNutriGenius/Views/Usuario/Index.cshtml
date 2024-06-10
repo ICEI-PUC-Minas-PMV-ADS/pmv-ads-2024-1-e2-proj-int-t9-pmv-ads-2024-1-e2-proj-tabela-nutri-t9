@@ -1,0 +1,129 @@
+@model UsuarioModel
+
+@{
+    Layout = "_Layout";
+}
+
+@{
+    ViewData["Title"] = "Cadastro de Usuário";
+}
+
+<h2>Cadastro de Usuário</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="NomeCompleto"></label>
+        <input asp-for="NomeCompleto" class="form-control rounded-input" />
+        <span asp-validation-for="NomeCompleto" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control rounded-input" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Celular"></label>
+        <input asp-for="Celular" class="form-control rounded-input" />
+        <span asp-validation-for="Celular" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CNPJ"></label>
+        <input asp-for="CNPJ" class="form-control rounded-input" />
+        <span asp-validation-for="CNPJ" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="RazaoSocial"></label>
+        <input asp-for="RazaoSocial" class="form-control rounded-input" />
+        <span asp-validation-for="RazaoSocial" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Senha"></label>
+        <input asp-for="Senha" type="password" class="form-control rounded-input" />
+        <span asp-validation-for="Senha" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ConfirmeSenha"></label>
+        <input asp-for="ConfirmeSenha" type="password" class="form-control rounded-input" />
+        <span asp-validation-for="ConfirmeSenha" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CEP"></label>
+        <input asp-for="CEP" class="form-control rounded-input" />
+        <span asp-validation-for="CEP" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Numero"></label>
+        <input asp-for="Numero" class="form-control rounded-input" />
+        <span asp-validation-for="Numero" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Estado"></label>
+        <select asp-for="Estado" class="form-control rounded-input">
+            <option value="">Selecione o estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select>
+        <span asp-validation-for="Estado" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Cidade"></label>
+        <input asp-for="Cidade" class="form-control rounded-input" />
+        <span asp-validation-for="Cidade" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Bairro"></label>
+        <input asp-for="Bairro" class="form-control rounded-input" />
+        <span asp-validation-for="Bairro" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Rua"></label>
+        <input asp-for="Rua" class="form-control rounded-input" />
+        <span asp-validation-for="Rua" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar dados</button>
+    <button type="reset" class="btn btn-secondary">Cancelar</button>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+<style>
+    .rounded-input {
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #f0f0f0;
+    }
+    .form-control {
+        margin-bottom: 10px;
+    }
+    .btn {
+        margin-right: 10px;
+    }
+</style>
