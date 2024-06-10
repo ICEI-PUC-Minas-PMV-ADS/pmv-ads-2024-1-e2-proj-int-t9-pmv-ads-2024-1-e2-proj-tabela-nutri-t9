@@ -16,7 +16,7 @@
 
 
 -- Copiando estrutura do banco de dados para nutrigenius_db
-CREATE DATABASE IF NOT EXISTS `nutrigenius_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE IF NOT EXISTS `nutrigenius_db`;
 USE `nutrigenius_db`;
 
 -- Copiando estrutura para tabela nutrigenius_db.materia_prima
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `materia_prima` (
   `fibra_alimentar` float DEFAULT NULL,
   `sodio` int DEFAULT NULL,
   PRIMARY KEY (`nome_materia_prima`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB;
 
 -- Copiando dados para a tabela nutrigenius_db.materia_prima: ~0 rows (aproximadamente)
 REPLACE INTO `materia_prima` (`nome_materia_prima`, `valor_energetico`, `carboidratos`, `acucares_totais`, `acucares_adicionados`, `proteinas`, `gorduras_totais`, `gorduras_saturadas`, `gorduras_trans`, `fibra_alimentar`, `sodio`) VALUES
@@ -405,8 +405,8 @@ REPLACE INTO `materia_prima` (`nome_materia_prima`, `valor_energetico`, `carboid
 	('Leite de coco', 166, 2.2, 0, 0, 1, 18.4, 15.6, 0, 0.7, 44),
 	('Leite de vaca achocolatado', 83, 14.2, 0, 0, 2.1, 2.2, 1.1, 0.22, 0.6, 72),
 	('Leite de vaca desnatado po', 362, 53, 0, 0, 34.7, 0.9, 0.6, 0.02, 0, 432),
-	('Leite de vaca desnatado UHT', 0, 0, 0, 0, 0, 0, 0, 0, 0, 51),
-	('Leite de vaca integral', 0, 0, 0, 0, 0, 0, 1.4, 0, 0, 64),
+	('Leite de vaca desnatado UHT', 34, 5, 0, 0, 2.9, 0.5, 0, 0, 0, 63),
+	('Leite de vaca integral', 42, 5, 5, 0, 3.4, 1, 0.6, 0, 0, 44),
 	('Leite de vaca integral po', 497, 39.2, 0, 0, 25.4, 26.9, 16.3, 0.94, 0, 323),
 	('Leite fermentado', 70, 15.7, 0, 0, 1.9, 0.1, 0, 0, 0, 33),
 	('Lentilha cozida', 93, 16.3, 0, 0, 6.3, 0.5, 0.1, 0, 7.9, 1),
@@ -644,7 +644,7 @@ CREATE TABLE IF NOT EXISTS `produto` (
   PRIMARY KEY (`nome_produto`),
   KEY `email` (`email`),
   CONSTRAINT `produto_ibfk_1` FOREIGN KEY (`email`) REFERENCES `usuario` (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB;
 
 -- Copiando dados para a tabela nutrigenius_db.produto: ~0 rows (aproximadamente)
 
@@ -653,21 +653,33 @@ CREATE TABLE IF NOT EXISTS `produto_materia_prima` (
   `nome_produto` varchar(255) DEFAULT NULL,
   `nome_materia_prima` varchar(255) DEFAULT NULL,
   `quantidade` double DEFAULT NULL,
-  KEY `nome_materia_prima` (`nome_produto`, `nome_materia_prima`),
-  CONSTRAINT `produto_materia_prima_ibfk_1` FOREIGN KEY (`nome_produto`) REFERENCES `produto` (`nome_produto`)
-  CONSTRAINT `produto_materia_prima_ibfk_2` FOREIGN KEY (`nome_materia_prima`) REFERENCES `materia_prima` (`nome_materia_prima`)
-
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`nome_materia_prima`,`nome_produto`),
+  KEY `nome_materia_prima` (`nome_materia_prima`),
+  CONSTRAINT `produto_materia_prima_ibfk_1` FOREIGN KEY (`nome_materia_prima`) REFERENCES `materia_prima` (`nome_materia_prima`),
+  KEY `nome_produto` (`nome_produto`),
+  CONSTRAINT `produto_materia_prima_ibfk_2` FOREIGN KEY (`nome_produto`) REFERENCES `produto` (`nome_produto`)
+) ENGINE=InnoDB;
 
 -- Copiando dados para a tabela nutrigenius_db.produto_materia_prima: ~0 rows (aproximadamente)
 
 -- Copiando estrutura para tabela nutrigenius_db.usuario
 CREATE TABLE IF NOT EXISTS `usuario` (
   `email` varchar(255) NOT NULL,
-  `nome_usuário` varchar(255) DEFAULT NULL,
+  `nome_usuario` varchar(255) DEFAULT NULL,
   `senha` varchar(255) DEFAULT NULL,
+  `confirme_senha` varchar(255) DEFAULT NULL,
+  `nome_completo` varchar(255) DEFAULT NULL,
+  `celular` varchar(255) DEFAULT NULL,
+  `razao_social` varchar(255) DEFAULT NULL,
+  `cadastro_nacional` varchar(255) DEFAULT NULL,
+  `cep` varchar(255) DEFAULT NULL,
+  `numero` varchar(255) DEFAULT NULL,
+  `estado` varchar(255) DEFAULT NULL,
+  `cidade` varchar(255) DEFAULT NULL,
+  `bairro` varchar(255) DEFAULT NULL,
+  `rua` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB;
 
 -- Copiando dados para a tabela nutrigenius_db.usuario: ~0 rows (aproximadamente)
 
