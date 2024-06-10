@@ -1,0 +1,108 @@
+@{
+  Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="~/css/Shared/_Layout.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/cadastroReceita.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/tabelaNutri.css" asp-append-version="true" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <title>Cadastro de Receita</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <form>
+      <fieldset class="material-form">
+        <legend>
+          <h1>CADASTRO DE RECEITAS</h1>
+        </legend>
+
+        <div>
+          <select name="tipoMP" id="">
+            <option value="semiacabado">Semiacabado</option>
+            <option value="acabado">Acabado</option>
+          </select>
+          <input class="nomeReceita" type="text" name="nomeReceita" placeholder="Nome da Receita" id="">
+          <button type="submit">Salvar</button>
+        </div>
+
+        <div id="material-list">
+
+          <div class="material-item">
+            <select name="nomesMpFiltro" id="nomesMpFiltro" class="select2 nomeMP"
+              placeholder="Selecione a Matéria-Prima">
+            </select>
+            <input class="quantidadeMP" type="text" name="quantidadeMP" placeholder="Quant. (g)" required>
+            <button type="button" id="add-btn" onclick="addMateria()">Adicionar</button>
+
+            <input class="infoNutri" type="number" name="valorEnergetico" placeholder="Kcal" disabled id="">
+            <input class="infoNutri" type="number" name="carboidratos" placeholder="CHO" disabled id="">
+            <input class="infoNutri" type="number" name="acucaresTotais" placeholder="Açúc. Total" disabled id="">
+            <input class="infoNutri" type="number" name="acucaresAdicionados" placeholder="Açúc. Add." disabled id="">
+            <input class="infoNutri" type="number" name="proteinas" placeholder="PTN" disabled id="">
+            <input class="infoNutri" type="number" name="gordurasTotais" placeholder="G. Totais" disabled id="">
+            <input class="infoNutri" type="number" name="gordurasSaturadas" placeholder="G. Sat." disabled id="">
+            <input class="infoNutri" type="number" name="gordurasTrans" placeholder="G.Trans" disabled id="">
+            <input class="infoNutri" type="number" name="fibraAlimentar" placeholder="Fibra" disabled id="">
+            <input class="infoNutri" type="number" name="sodio" placeholder="Sódio" disabled id="">
+
+          </div>
+
+        </div>
+      </fieldset>
+    </form>
+    <fieldset class="field">
+      <div class="section2">
+        <fieldset>
+          <input class="porcao" type="number" name="porcaoEmb" placeholder="Porção por embalagem" id="">
+          <input class="porcao" type="number" name="porcao" placeholder="Porção" id="">
+          <legend>
+            <h2>TABELA</h2>
+          </legend>
+          <div class="tabelaCentral">
+            <section class="tabela"></section>
+          </div>
+        </fieldset>
+
+        <div>
+          <fieldset class="modoPreparo">
+            <legend>
+              <h2>MODO DE PREPARO</h2>
+            </legend>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite o modo de preparo..."></textarea>
+          </fieldset>
+        </div>
+
+        <div>
+          <fieldset class="conservacao">
+            <legend>
+              <h2>CONSERVAÇÃO</h2>
+            </legend>
+            <select name="tipoConservacao" id="">
+              <option value="refrigerada">Geladeira / Estufa refrigerada</option>
+              <option value="congelada">Freezer / Congelador</option>
+              <option value="congeladaAberta">Freezer/Congelador (Aberto)</option>
+              <option value="estufa">Estufa quente</option>
+            </select>
+          </fieldset>
+        </div>
+
+      </div>
+    </fieldset>
+  </div>
+
+  <script src="~/js/cadastroReceita.js" asp-append-version="true"></script>
+
+</body>
+
+</html>
