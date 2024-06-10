@@ -405,8 +405,8 @@ REPLACE INTO `materia_prima` (`nome_materia_prima`, `valor_energetico`, `carboid
 	('Leite de coco', 166, 2.2, 0, 0, 1, 18.4, 15.6, 0, 0.7, 44),
 	('Leite de vaca achocolatado', 83, 14.2, 0, 0, 2.1, 2.2, 1.1, 0.22, 0.6, 72),
 	('Leite de vaca desnatado po', 362, 53, 0, 0, 34.7, 0.9, 0.6, 0.02, 0, 432),
-	('Leite de vaca desnatado UHT', 34, 5, 0, 0, 2.9, 0.5, 0, 0, 0, 63),
-	('Leite de vaca integral', 42, 5, 5, 0, 3.4, 1, 0.6, 0, 0, 44),
+	('Leite de vaca desnatado UHT', 0, 0, 0, 0, 0, 0, 0, 0, 0, 51),
+	('Leite de vaca integral', 0, 0, 0, 0, 0, 0, 1.4, 0, 0, 64),
 	('Leite de vaca integral po', 497, 39.2, 0, 0, 25.4, 26.9, 16.3, 0.94, 0, 323),
 	('Leite fermentado', 70, 15.7, 0, 0, 1.9, 0.1, 0, 0, 0, 33),
 	('Lentilha cozida', 93, 16.3, 0, 0, 6.3, 0.5, 0.1, 0, 7.9, 1),
@@ -653,8 +653,10 @@ CREATE TABLE IF NOT EXISTS `produto_materia_prima` (
   `nome_produto` varchar(255) DEFAULT NULL,
   `nome_materia_prima` varchar(255) DEFAULT NULL,
   `quantidade` double DEFAULT NULL,
-  KEY `nome_materia_prima` (`nome_materia_prima`),
-  CONSTRAINT `produto_materia_prima_ibfk_1` FOREIGN KEY (`nome_materia_prima`) REFERENCES `materia_prima` (`nome_materia_prima`)
+  KEY `nome_materia_prima` (`nome_produto`, `nome_materia_prima`),
+  CONSTRAINT `produto_materia_prima_ibfk_1` FOREIGN KEY (`nome_produto`) REFERENCES `produto` (`nome_produto`)
+  CONSTRAINT `produto_materia_prima_ibfk_2` FOREIGN KEY (`nome_materia_prima`) REFERENCES `materia_prima` (`nome_materia_prima`)
+
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Copiando dados para a tabela nutrigenius_db.produto_materia_prima: ~0 rows (aproximadamente)
