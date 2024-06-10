@@ -17,22 +17,18 @@ public class UsuarioModel
         [Display(Name = "Razão Social")]
         public string ? RazaoSocial { get; set; }
 
-        [Required]
         [Display(Name = "Nome completo")]
         public string NomeCompleto { get; set; }
 
-        [Required]
         [EmailAddress]
         public string ? Email { get; set; }
 
         [Phone]
         public string ? Celular { get; set; }
 
-        [Required]
         [DataType(DataType.Password)]
         public string Senha { get; set; }
 
-        [Required]
         [DataType(DataType.Password)]
         [Compare("Senha", ErrorMessage = "A senha e a confirmação de senha não correspondem.")]
         [Display(Name = "Confirme a senha")]
