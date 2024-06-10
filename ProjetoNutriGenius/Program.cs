@@ -51,10 +51,10 @@ app.MapControllerRoute(
     name: "Usuario",
     pattern: "Usuario",
     defaults: new { controller = "Usuario", action = "Index" });
-
+   
     app.MapControllerRoute(
-    name: "Login",
-    pattern: "Login",
-    defaults: new { controller = "Login", action = "Index" });
+    name: "ItensCadastrados",
+    pattern: "ItensCadastrados",
+    defaults: new { controller = "ItensCadastrados", action = "Index" });
 
 app.Run();
