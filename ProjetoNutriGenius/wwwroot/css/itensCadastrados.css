@@ -1,0 +1,48 @@
+.container {
+  display: grid;
+  justify-items: center;
+  width: auto;
+}
+
+.material-form {
+  display: grid;
+  justify-items: left;
+  width: 85vw;
+  margin: 30px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.material-item {
+  margin-bottom: 10px;
+}
+
+.remove-btn {
+  margin-left: 10px;
+}
+
+.infoNutri {
+  width: 80px;
+  height: 20px;
+  text-align: center;
+}
+
+.nomeMP {
+  width: 480px;
+  height: 20px;
+}
+
+select {
+  height: auto;
+  width: auto;
+  margin-bottom: 10px;
+  border: solid 2px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  width: 85vw;
+}

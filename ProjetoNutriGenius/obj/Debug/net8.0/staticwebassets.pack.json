@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\cadastroReceita.css"
     },
     {
+      "Id": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\wwwroot\\css\\itensCadastrados.css",
+      "PackagePath": "staticwebassets\\css\\itensCadastrados.css"
+    },
+    {
       "Id": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\wwwroot\\css\\menu.css",
       "PackagePath": "staticwebassets\\css\\menu.css"
     },
@@ -59,6 +63,10 @@
     {
       "Id": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\wwwroot\\js\\cadastroReceita.js",
       "PackagePath": "staticwebassets\\js\\cadastroReceita.js"
+    },
+    {
+      "Id": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\wwwroot\\js\\itensCadastrados.js",
+      "PackagePath": "staticwebassets\\js\\itensCadastrados.js"
     },
     {
       "Id": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\wwwroot\\js\\menu.js",

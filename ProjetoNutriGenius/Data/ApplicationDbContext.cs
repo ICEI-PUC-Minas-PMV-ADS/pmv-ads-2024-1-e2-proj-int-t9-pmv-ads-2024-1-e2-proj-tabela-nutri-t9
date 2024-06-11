@@ -6,15 +6,16 @@ public class ApplicationDbContext : DbContext
         : base(options)
     {
     }
-    public DbSet<MateriaPrimaModel> materiaPrimaModel { get; set; }
+    public DbSet<MateriaPrimaModel> MateriaPrimaRepository { get; set; }
     public DbSet<UsuarioModel> UsuarioRepository { get; set; }
+    public DbSet<ProdutoModel> ProdutoRepository { get; set; }
+    public DbSet<ProdutoMateriaPrimaModel> ProdutoMateriaPrimaRepository { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<MateriaPrimaModel>(entity =>
         {
-            entity.HasKey(e => new {e.NomeMateriaPrima});
-            entity.ToTable("materia_prima");
+            entity.ToTable("materia_prima").HasKey(e => e.NomeMateriaPrima);
             entity.Property(e => e.NomeMateriaPrima).HasColumnName("nome_materia_prima");
             entity.Property(e => e.ValorEnergetico).HasColumnName("valor_energetico");
             entity.Property(e => e.Carboidratos).HasColumnName("carboidratos");
@@ -30,17 +31,18 @@ public class ApplicationDbContext : DbContext
 
         modelBuilder.Entity<ProdutoMateriaPrimaModel>(entity =>
         {
-            entity.HasKey(e => e.NomeMateriaPrima);
+            entity.HasKey(e => new {e.NomeProduto, e.NomeMateriaPrima});
             entity.ToTable("produto_materia_prima");
             entity.Property(e => e.Quantidade).HasColumnName("quantidade");
             entity.HasOne(e => e.Produto)
-                  .WithOne(e => e.ProdutoMateriaPrima)
-                  .HasForeignKey<ProdutoModel>(e => e.NomeProduto)
+                  .WithMany(e => e.ProdutoMateriaPrima)
+                  .HasForeignKey(e => e.NomeProduto)
                   .OnDelete(DeleteBehavior.Cascade);
             entity.HasOne(e => e.MateriaPrima)
                   .WithMany(e => e.ProdutoMateriaPrima)
                   .HasForeignKey(e => e.NomeMateriaPrima)
                   .OnDelete(DeleteBehavior.Cascade);
+
         });
 
         modelBuilder.Entity<ProdutoModel>(entity =>
@@ -48,21 +50,26 @@ public class ApplicationDbContext : DbContext
             entity.HasKey(e => new {e.NomeProduto});
             entity.ToTable("produto");
             entity.Property(e => e.NomeProduto).HasColumnName("nome_produto");
-            entity.Property(e => e.CodigoProduto).HasColumnName("codigo_produto");
-            entity.HasOne(e => e.Usuario);
-//                .WithMany(e => e.Produto)
-  //              .HasForeignKey(e => e.Usuario.Email)
-    //            .OnDelete(DeleteBehavior.Cascade);
+            entity.Property(e => e.CodigoProduto).HasColumnName("codigo_produto").HasConversion(
+              v => v.ToString(),      // Converts enum to string for database
+              v => (Codigo_Produto)Enum.Parse(typeof(Codigo_Produto), v)  // Converts string back to enum
+            ).IsRequired(false); // Update based on whether it's a required field;
+            entity.Property(e => e.Email).HasColumnName("email");
+            entity.HasOne(e => e.Usuario)
+                  .WithMany(e => e.Produto)
+                  .HasForeignKey(e => e.Email)
+                  .OnDelete(DeleteBehavior.Cascade);
         });
 
         modelBuilder.Entity<UsuarioModel>(entity =>
         {
             entity.HasKey(e => new {e.Email});
             entity.ToTable("usuario"); 
+            entity.Property(e => e.NomeUsuario).IsRequired().HasColumnName("nome_usuario");
             entity.Property(e => e.NomeCompleto).IsRequired().HasColumnName("nome_completo");
             entity.Property(e => e.Email).IsRequired().HasColumnName("email");
             entity.Property(e => e.Celular).HasColumnName("celular");
-            entity.Property(e => e.CNPJ).HasColumnName("cnpj");
+            entity.Property(e => e.CNPJ).HasColumnName("cadastro_nacional");
             entity.Property(e => e.RazaoSocial).HasColumnName("razao_social");
             entity.Property(e => e.Senha).IsRequired().HasColumnName("senha");
             entity.Property(e => e.ConfirmeSenha).IsRequired().HasColumnName("confirme_senha");

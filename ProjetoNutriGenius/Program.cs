@@ -42,9 +42,24 @@ app.MapControllerRoute(
     pattern: "CadastroReceita",
     defaults: new { controller = "CadastroReceita", action = "Index" });
 
-    app.MapControllerRoute(
+app.MapControllerRoute(
     name: "Relatorio",
     pattern: "Relatorio",
     defaults: new { controller = "Relatorio", action = "Index" });
+
+app.MapControllerRoute(
+    name: "Usuario",
+    pattern: "Usuario",
+    defaults: new { controller = "Usuario", action = "Index" });
+
+app.MapControllerRoute(
+    name: "ItensCadastrados",
+    pattern: "ItensCadastrados",
+    defaults: new { controller = "ItensCadastrados", action = "Index" });
+
+app.MapControllerRoute(
+    name: "Legislacao",
+    pattern: "Legislacao",
+    defaults: new { controller = "Legislacao", action = "Index" });
 
 app.Run();

@@ -42,11 +42,5 @@ Para realização desse projeto usaremos as seguintes tecnologias:
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+A hospedagem do projeto foi feita em uma máquina virtual no azure, com sistema operacional linux ubuntu e tamanho Standard B2s (2 vcpus, 4 GiB de memória). 
+Nessa máquina configuramos a rede e o apache para acesso à página. Não configuramos o DNS, então ele está disponível pelo link [http://4.246.226.83/](http://4.246.226.83/)

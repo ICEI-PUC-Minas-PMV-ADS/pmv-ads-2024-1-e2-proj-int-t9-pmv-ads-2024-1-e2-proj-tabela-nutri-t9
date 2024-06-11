@@ -1,0 +1,78 @@
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/Shared/_Layout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/itensCadastrados.css" asp-append-version="true" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <title>Itens Cadastrados | NutriGenius</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <fieldset class="material-form">
+                <legend>
+                    <h1>ITENS CADASTRADOS</h1>
+                </legend>
+                <div>
+                    <span>Tipo de receita:</span>
+                    <label>
+                        <input type="radio" name="tipo_receita" value="semiacabado">
+                        Semiacabado
+                    </label>
+                    <label>
+                        <input type="radio" name="tipo_receita" value="acabado">
+                        Acabado
+                    </label>
+                    <button type="submit">Salvar</button>
+                </div>
+                <div>
+                    <select name="nomesMpFiltro" id="nomesMpFiltro" class="select2 nomeMP"
+                        placeholder="Selecione a Matéria-Prima">
+                    </select>
+                </div>
+                <div id="material-list">
+                    <div class="material-item">
+                        <button type="button" id="add-btn" onclick="addMateria()">Editar</button>
+                        <button type="button" id="add-btn" onclick="printItensCadastrados()">Imprimir</button>
+
+                        <input type="text" name="nomesMpFiltro" id="nomesMpFiltro" class="nomeMP"
+                            placeholder="Receita Cadastrada" disabled>
+
+                        <input class="infoNutri" type="text" name="quantidadeMP" placeholder="Quant. (g)" disabled>
+
+                        <input class="infoNutri" type="number" name="valorEnergetico" placeholder="Kcal" disabled id="">
+                        <input class="infoNutri" type="number" name="carboidratos" placeholder="CHO" disabled id="">
+                        <input class="infoNutri" type="number" name="acucaresTotais" placeholder="Açúc. Total" disabled
+                            id="">
+                        <input class="infoNutri" type="number" name="acucaresAdicionados" placeholder="Açúc. Add."
+                            disabled id="">
+                        <input class="infoNutri" type="number" name="proteinas" placeholder="PTN" disabled id="">
+                        <input class="infoNutri" type="number" name="gordurasTotais" placeholder="G. Totais" disabled
+                            id="">
+                        <input class="infoNutri" type="number" name="gordurasSaturadas" placeholder="G. Sat." disabled
+                            id="">
+                        <input class="infoNutri" type="number" name="gordurasTrans" placeholder="G.Trans" disabled
+                            id="">
+                        <input class="infoNutri" type="number" name="fibraAlimentar" placeholder="Fibra" disabled id="">
+                        <input class="infoNutri" type="number" name="sodio" placeholder="Sódio" disabled id="">
+                    </div>
+
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <script src="~/js/itensCadastrados.js" asp-append-version="true"></script>
+</body>
+
+</html>

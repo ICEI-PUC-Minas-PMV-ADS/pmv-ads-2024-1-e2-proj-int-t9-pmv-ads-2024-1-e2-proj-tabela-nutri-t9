@@ -15,11 +15,12 @@ function retornarNav() {
     return `<nav class="navbar">
     <a><img class="logo" src="/img/Logo.png" style="width: 150px; height: 30px;"></a>
     <ul class="menu">
-        <li><a href="/Menu">Página Inicial</a></li>
-        <li><a href="/Relatorio">Como usar?</a></li>
-        <li><a href="#">Qual legislação vigente?</a></li>
+        <li><a href="/Home">Página Inicial</a></li>
+        <li><a href="/Menu">Menu Principal</a></li>
+        <li><a href="#">Como usar?</a></li>
+        <li><a href="/Legislacao">Qual legislação vigente?</a></li>
         <li><a href="#">Sobre Nós</a></li>
-        <li><a href="">Login</a></li>
+        <li><a href="/Login">Login</a></li>
     </ul>
     </nav>`
 };
