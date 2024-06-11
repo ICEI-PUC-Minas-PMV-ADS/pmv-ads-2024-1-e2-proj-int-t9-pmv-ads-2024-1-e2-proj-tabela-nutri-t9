@@ -4146,24 +4146,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pessoal\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\hmben\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pessoal\\Documents\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
+      "projectUniqueName": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
       "projectName": "ProjetoNutriGenius",
-      "projectPath": "C:\\Users\\Pessoal\\Documents\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
-      "packagesPath": "C:\\Users\\Pessoal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pessoal\\Documents\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\obj\\",
+      "projectPath": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\ProjetoNutriGenius.csproj",
+      "packagesPath": "C:\\Users\\hmben\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hmben\\OneDrive\\Documentos\\GitHub\\pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9\\ProjetoNutriGenius\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Pessoal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\hmben\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4232,7 +4227,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
