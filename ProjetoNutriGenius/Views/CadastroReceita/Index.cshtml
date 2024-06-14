@@ -15,7 +15,7 @@
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-  <title>Cadastro de Receita</title>
+  <title>Cadastro de Receita | NutriGenius</title>
 </head>
 
 <body>
@@ -75,6 +75,14 @@
         </fieldset>
 
         <div>
+          <fieldset class="alergicos">
+            <legend>
+              <h2>ALÉRGICOS</h2>
+            </legend>
+            <textarea id="mensagem" name="mensagem"
+              placeholder="Digite a lista de alergênicos... Ex: CONTÉM GLÚTEN. ALÉRGICOS: CONTÉM OVO E DERIVADOS DE LEITE, TRIGO E SOJA. CONTÉM LACTOSE."></textarea>
+          </fieldset>
+
           <fieldset class="modoPreparo">
             <legend>
               <h2>MODO DE PREPARO</h2>
@@ -88,12 +96,39 @@
             <legend>
               <h2>CONSERVAÇÃO</h2>
             </legend>
-            <select name="tipoConservacao" id="">
-              <option value="refrigerada">Geladeira / Estufa refrigerada</option>
-              <option value="congelada">Freezer / Congelador</option>
-              <option value="congeladaAberta">Freezer/Congelador (Aberto)</option>
-              <option value="estufa">Estufa quente</option>
-            </select>
+            <section class="conservacaoRelatorio">
+              <table>
+                <tr>
+                  <th>CONSERVAÇÃO</th>
+                  <th>TEMPO</th>
+                  <th>TEMPERATURA</th>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="" id="">Geladeira / Estufa refrigerada</td>
+                  <td>3 dias</td>
+                  <td>(0ºC a +4ºC)</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="" id="">Freezer / Congelador</td>
+                  <td>5 meses</td>
+                  <td>(-12ºC ou mais frio)</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="" id="">Freezer / Congelador (Aberto)</td>
+                  <td>1 mês</td>
+                  <td>(-12ºC ou mais frio)</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="" id="">Estufa quente</td>
+                  <td>6 horas</td>
+                  <td>(60°C a 65°C)</td>
+                </tr>
+              </table>
+              <div class="observacaoRelatorio">
+                <p>Após aberto, produto não pode ser armazenado em freezer sem estar devidamente fechado novamente.
+                  Após descongelado, não congelar o produto novamente.</p>
+              </div>
+            </section>
           </fieldset>
         </div>
 

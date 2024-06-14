@@ -235,7 +235,4 @@ function filtrarMP() {
 
     console.log(options);
 
-
-
-
 }
