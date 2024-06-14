@@ -80,6 +80,7 @@ document.getElementById('tabela').addEventListener('input', function(event) {
     }
 });
 
+
 // Verificar entrada para garantir que apenas números são inseridos nas demais células
 document.getElementById('tabela').addEventListener('input', function(event) {
     var target = event.target;
