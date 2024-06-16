@@ -5,3 +5,7 @@ function acessoCadastroReceita() {
 function acessoItensCadastrados() {
   window.location.href = "/ItensCadastrados";
 }
+
+function acessoCadastradoMP() {
+  window.location.href = "/CadastroMP";
+}

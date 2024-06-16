@@ -62,4 +62,9 @@ app.MapControllerRoute(
     pattern: "Legislacao",
     defaults: new { controller = "Legislacao", action = "Index" });
 
+app.MapControllerRoute(
+    name: "CadastroMP",
+    pattern: "CadastroMP",
+    defaults: new { controller = "CadastroMP", action = "Index" });
+
 app.Run();
