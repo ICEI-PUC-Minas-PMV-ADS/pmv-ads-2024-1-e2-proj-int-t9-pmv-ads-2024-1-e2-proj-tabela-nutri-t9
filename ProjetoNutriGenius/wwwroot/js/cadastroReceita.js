@@ -106,8 +106,6 @@ function pegarMateriasAdd() {
     for (let i = 3; i < materialList.childNodes.length; i++) {
         const element1 = materialList.childNodes[i];
 
-        console.log(element1);
-
         let inputs = element1.querySelectorAll("input");
 
         for (let i = 0; i < inputs.length; i++) {
@@ -149,10 +147,7 @@ function pegarMateriasAdd() {
         }
 
     }
-    console.log(info);
-
     return info
-
 }
 
 function removeMateria(button) {
@@ -319,7 +314,6 @@ function atualizarTab() {
     tabelaDiv.append(document.createElement('div'))
 
     criarTabela()
-
 }
 
 function trocarValor(tabela, campo, valor) {
@@ -354,9 +348,5 @@ function filtrarMP() {
                 optionElement.textContent = optionText;
                 selectElement.appendChild(optionElement);
             });
-
-
         });
-
-
 }
