@@ -33,7 +33,8 @@
             <option value="acabado">Acabado</option>
           </select>
           <input class="nomeReceita" type="text" name="nomeReceita" placeholder="Nome da Receita" id="">
-          <button type="submit">Salvar</button>
+          <button type="button" onclick="atualizarTab()">Atualizar Tabela</button>
+          <button type="submit" onclick="salvarReceitaBD()">Salvar</button>
         </div>
 
         <div id="material-list">
@@ -64,13 +65,15 @@
     <fieldset class="field">
       <div class="section2">
         <fieldset>
-          <input class="porcao" type="number" name="porcaoEmb" placeholder="Porção por embalagem" id="">
-          <input class="porcao" type="number" name="porcao" placeholder="Porção" id="">
+          <input class="porcao" type="number" name="porcaoEmb" placeholder="Porção por embalagem" id="porcaoEmb">
+          <input class="porcao" type="number" name="porcao" placeholder="Porção" id="porcao">
           <legend>
             <h2>TABELA</h2>
           </legend>
           <div class="tabelaCentral">
-            <section class="tabela"></section>
+            <section class="tabela">
+              <div></div>
+            </section>
           </div>
         </fieldset>
 
