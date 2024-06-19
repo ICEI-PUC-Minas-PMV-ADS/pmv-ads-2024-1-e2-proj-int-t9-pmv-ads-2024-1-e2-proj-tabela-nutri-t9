@@ -16,52 +16,58 @@
 </head>
 
 <body>
+    <div class="container">
+        <form>
+            <fieldset class="material-form">
 
-    <br>
-    <h1>
-        <p align="center">Cadastro de matéria-prima
-    </h1>
-    <form id="form">
-        <br>
-        <label for="tipo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tipo:</label>
-        <input type="radio" name="tipo" value="Semiacabado"> Semiacabado &nbsp;
-        <input type="radio" name="tipo" value="Acabado"> Acabado<br><br>
+                <FOrm>
+                    <fieldset>
+                        <legend>
+                            <h1>CADASTRO DE MATÉRIA-PRIMA</h1>
+                        </legend>
 
-    </form>
+                        <button type="button" onclick="excluirLinhas()">Excluir</button>
+                        <button type="button" onclick="adicionarLinha()">Adicionar Item</button>
+                        <button type="button" onclick="salvarDados()">Salvar</button>
 
-    <table class="table table-success table-striped" id="tabela">
-        <tr>
-            <th></th>
-            <th><br>Nome do item</th>
-            <th><br>TIPO</th>
-            <th>VALOR ENERGÉTICO<br>(Kcal)</th>
-            <th><br>CARBOIDRATOS<br>(g)</th>
-            <th>AÇUCARES<br>TOTAIS<br>(g)</th>
-            <th>AÇUCARES<br>ADICIONADOS<br>(g)</th>
-            <th><br>PROTEÍNAS<br>(g)</th>
-            <th>GORDURAS<br>TOTAIS<br>(g)</th>
-            <th>GORDURAS<br>SATURADAS<br>(g)</th>
-            <th>GORDURAS<br>TRANS<br>(g)</th>
-            <th>FIBRA<br>ALIMENTAR<br>(g)</th>
-            <th><br>SÓDIO<br>(mg)</th>
+                        <label for="tipo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tipo:</label>
+                        <input type="radio" name="tipo" value="Semiacabado"> Semiacabado &nbsp;
+                        <input type="radio" name="tipo" value="Acabado"> Acabado<br><br>
 
-        </tr>
-    </table>
+                        <table class="" id="tabela">
+                            <tr>
+                                <th></th>
+                                <th><br>Nome do item</th>
+                                <th><br>TIPO</th>   
+                                <th>VALOR ENERGÉTICO<br>(Kcal)</th>
+                                <th><br>CARBOIDRATOS<br>(g)</th>
+                                <th>AÇUCARES<br>TOTAIS<br>(g)</th>
+                                <th>AÇUCARES<br>ADICIONADOS<br>(g)</th>
+                                <th><br>PROTEÍNAS<br>(g)</th>
+                                <th>GORDURAS<br>TOTAIS<br>(g)</th>
+                                <th>GORDURAS<br>SATURADAS<br>(g)</th>
+                                <th>GORDURAS<br>TRANS<br>(g)</th>
+                                <th>FIBRA<br>ALIMENTAR<br>(g)</th>
+                                <th><br>SÓDIO<br>(mg)</th>
 
-    <p align="right"><button type="button" onclick="excluirLinhas()">Excluir</button></align>
-        <button type="button" onclick="adicionarLinha()">Adicionar Item</button>
-        <button type="button" onclick="salvarDados()">Salvar</button>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </FOrm>
+                <p align="center">
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Deseja realmente excluir as linhas selecionadas?</p>
+                        <button id="confirmar-exclusao">Excluir</button>
+                        <button id="cancelar-exclusao">Cancelar</button>
+                    </div>
+                </div>
+                </p>
 
-    <p align="center">
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Deseja realmente excluir as linhas selecionadas?</p>
-            <button id="confirmar-exclusao">Excluir</button>
-            <button id="cancelar-exclusao">Cancelar</button>
-        </div>
+            </fieldset>
+        </form>
     </div>
-    </p>
 
     <script src="~/js/cadastroMP.js" asp-append-version="true"></script>
 
