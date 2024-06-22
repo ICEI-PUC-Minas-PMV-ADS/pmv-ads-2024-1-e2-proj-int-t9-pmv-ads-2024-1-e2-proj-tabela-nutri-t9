@@ -28,11 +28,11 @@
         </legend>
 
         <div>
-          <select name="tipoMP" id="">
+          <select name="tipoMP" id="tipoMP">
             <option value="semiacabado">Semiacabado</option>
             <option value="acabado">Acabado</option>
           </select>
-          <input class="nomeReceita" type="text" name="nomeReceita" placeholder="Nome da Receita" id="">
+          <input class="nomeReceita" type="text" name="nomeReceita" placeholder="Nome da Receita" id="nomeReceita">
           <button type="button" onclick="atualizarTab()">Atualizar Tabela</button>
           <button type="submit" onclick="salvarReceitaBD()">Salvar</button>
         </div>
@@ -43,7 +43,8 @@
             <select name="nomesMpFiltro" id="nomesMpFiltro" class="select2 nomeMP"
               placeholder="Selecione a Matéria-Prima">
             </select>
-            <input class="quantidadeMP" type="text" name="quantidadeMP" placeholder="Quant. (g)" required>
+            <input class="quantidadeMP" type="text" name="quantidadeMP" id="quantidadeMP" placeholder="Quant. (g)"
+              required>
             <button type="button" id="add-btn" onclick="addMateria()">Adicionar</button>
 
             <input class="infoNutri" type="number" name="valorEnergetico" placeholder="Kcal" disabled id="">
@@ -82,7 +83,7 @@
             <legend>
               <h2>ALÉRGICOS</h2>
             </legend>
-            <textarea id="mensagem" name="mensagem"
+            <textarea id="alergicos" name="mensagem"
               placeholder="Digite a lista de alergênicos... Ex: CONTÉM GLÚTEN. ALÉRGICOS: CONTÉM OVO E DERIVADOS DE LEITE, TRIGO E SOJA. CONTÉM LACTOSE."></textarea>
           </fieldset>
 
@@ -90,7 +91,7 @@
             <legend>
               <h2>MODO DE PREPARO</h2>
             </legend>
-            <textarea id="mensagem" name="mensagem" placeholder="Digite o modo de preparo..."></textarea>
+            <textarea id="modoPreparo" name="mensagem" placeholder="Digite o modo de preparo..."></textarea>
           </fieldset>
         </div>
 
@@ -100,7 +101,7 @@
               <h2>CONSERVAÇÃO</h2>
             </legend>
             <section class="conservacaoRelatorio">
-              <table>
+              <table id='conservacao'>
                 <tr>
                   <th>CONSERVAÇÃO</th>
                   <th>TEMPO</th>
