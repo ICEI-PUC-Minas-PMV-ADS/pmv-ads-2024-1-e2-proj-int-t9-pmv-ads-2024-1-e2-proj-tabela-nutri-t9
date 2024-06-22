@@ -241,61 +241,61 @@ function retornarTabela() {
             <tr>
                 <td class="td">Valor energético (kcal)</td>
                 <td>{!kcal_c}</td>
-                <td>{!kcal_p}</td>
+                <td id='valorEnergeticoTabelaP'>{!kcal_p}</td>
                 <td>{!kcal_vd}</td>
             </tr>
             <tr>
                 <td class="td">Carboidratos (g)</td>
                 <td>{!cho_c}</td>
-                <td>{!cho_p}</td>
+                <td id='carboidratosTabelaP'>{!cho_p}</td>
                 <td>{!cho_vd}</td>
             </tr>
             <tr>
                 <td class="prima">Açúcares totais (g)</td>
                 <td>{!act_c}</td>
-                <td>{!act_p}</td>
+                <td id='acucaresTotaisTabelaP'>{!act_p}</td>
                 <td>{!act_vd}</td>
             </tr>
             <tr>
                 <td class="secon">Açúcares adicionados (g)</td>
                 <td>{!acd_c}</td>
-                <td>{!acd_p}</td>
+                <td id='acucaresAdicionadosTabelaP'>{!acd_p}</td>
                 <td>{!acd_vd}</td>
             </tr>
             <tr>
                 <td class="td">Proteinas (g)</td>
                 <td>{!ptn_c}</td>
-                <td>{!ptn_p}</td>
+                <td id='proteinasTabelaP'>{!ptn_p}</td>
                 <td>{!ptn_vd}</td>
             </tr>
             <tr>
                 <td class="td">Gorduras totais (g)</td>
                 <td>{!lip_c}</td>
-                <td>{!lip_p}</td>
+                <td id='gordurasTotaisTabelaP'>{!lip_p}</td>
                 <td>{!lip_vd}</td>
             </tr>
             <tr>
                 <td class="prima">Gorduras saturadas (g)</td>
                 <td>{!sat_c}</td>
-                <td>{!sat_p}</td>
+                <td id='gordurasSaturadasTabelaP'>{!sat_p}</td>
                 <td>{!sat_vd}</td>
             </tr>
             <tr>
                 <td class="prima">Gorduras trans (g)</td>
                 <td>{!trans_c}</td>
-                <td>{!trans_p}</td>
+                <td id='gordurasTransTabelaP'>{!trans_p}</td>
                 <td>{!trans_vd}</td>
             </tr>
             <tr>
                 <td class="td">Fibra alimentar (g)</td>
                 <td>{!fib_c}</td>
-                <td>{!fib_p}</td>
+                <td id='fibraAlimentarTabelaP'>{!fib_p}</td>
                 <td>{!fib_vd}</td>
             </tr>
             <tr>
                 <td class="td">Sódio (mg)</td>
                 <td>{!sod_c}</td>
-                <td>{!sod_p}</td>
+                <td id='sodioTabelaP'>{!sod_p}</td>
                 <td>{!sod_vd}</td>
             </tr>
         </tbody>
@@ -349,4 +349,113 @@ function filtrarMP() {
                 selectElement.appendChild(optionElement);
             });
         });
+}
+
+function salvarReceitaBD() {
+    let produtoFinal = {
+        nomeReceita: null,
+        quantidadeMP: null,
+        alergicos: null,
+        modoPreparo: null,
+        conservacao: null,
+        tipoMP: null,
+        porcaoEmb: null,
+        porcao: null,
+        valorEnergetico: null,
+        carboidratos: null,
+        acucaresTotais: null,
+        acucaresAdicionados: null,
+        proteinas: null,
+        gordurasTotais: null,
+        gordurasSaturadas: null,
+        gordurasTrans: null,
+        fibraAlimentar: null,
+        sodio: null
+    }
+
+    let nomeReceita = document.querySelector('#nomeReceita').value;
+    let quantidadeMP = document.querySelector('#quantidadeMP').value;
+    let alergicos = document.querySelector('#alergicos').value;
+    let modoPreparo = document.querySelector('#modoPreparo').value;
+    let conservacao = document.querySelector('#conservacao');
+    let tipoMP = document.querySelector('#tipoMP').value;
+    let porcaoEmb = document.querySelector('#porcaoEmb').value;
+    let porcao = document.querySelector('#porcao').value;
+
+    let documentTabela = document.querySelector('.tabela');
+    let valorEnergetico = documentTabela.querySelector('#valorEnergeticoTabelaP').textContent;
+    let carboidratos = documentTabela.querySelector('#carboidratosTabelaP').textContent;
+    let acucaresTotais = documentTabela.querySelector('#acucaresTotaisTabelaP').textContent;
+    let acucaresAdicionados = documentTabela.querySelector('#acucaresAdicionadosTabelaP').textContent;
+    let proteinas = documentTabela.querySelector('#proteinasTabelaP').textContent;
+    let gordurasTotais = documentTabela.querySelector('#gordurasTotaisTabelaP').textContent;
+    let gordurasSaturadas = documentTabela.querySelector('#gordurasSaturadasTabelaP').textContent;
+    let gordurasTrans = documentTabela.querySelector('#gordurasTransTabelaP').textContent;
+    let fibraAlimentar = documentTabela.querySelector('#fibraAlimentarTabelaP').textContent;
+    let sodio = documentTabela.querySelector('#sodioTabelaP').textContent;
+
+    console.log(nomeReceita);
+    console.log(quantidadeMP);
+    console.log(alergicos);
+    console.log(modoPreparo);
+    console.log(conservacao);
+    console.log(tipoMP);
+    console.log(porcaoEmb);
+    console.log(porcao);
+
+
+    console.log(valorEnergetico);
+    console.log(carboidratos);
+    console.log(acucaresTotais);
+    console.log(acucaresAdicionados);
+    console.log(proteinas);
+    console.log(gordurasTotais);
+    console.log(gordurasSaturadas);
+    console.log(gordurasTrans);
+    console.log(fibraAlimentar);
+    console.log(sodio);
+
+    produtoFinal.nomeReceita = nomeReceita;
+    produtoFinal.quantidadeMP = quantidadeMP;
+    produtoFinal.alergicos = alergicos;
+    produtoFinal.modoPreparo = modoPreparo;
+    produtoFinal.conservacao = conservacao;
+    produtoFinal.tipoMP = tipoMP;
+    produtoFinal.porcaoEmb = porcaoEmb;
+    produtoFinal.porcao = porcao;
+
+    produtoFinal.valorEnergetico = valorEnergetico;
+    produtoFinal.carboidratos = carboidratos;
+    produtoFinal.acucaresTotais = acucaresTotais;
+    produtoFinal.acucaresAdicionados = acucaresAdicionados;
+    produtoFinal.proteinas = proteinas;
+    produtoFinal.gordurasTotais = gordurasTotais;
+    produtoFinal.gordurasSaturadas = gordurasSaturadas;
+    produtoFinal.gordurasTrans = gordurasTrans;
+    produtoFinal.fibraAlimentar = fibraAlimentar;
+    produtoFinal.sodio = sodio;
+
+    let listProdutosSalvosAnteriormente = JSON.parse(localStorage.getItem('listaProdutosSalvos'));
+    console.log('listProdutosSalvosAnteriormente: ', listProdutosSalvosAnteriormente);
+
+    let listaProdutosSalvosAtualizada = [];
+    if (listProdutosSalvosAnteriormente) {
+        // to do: buscar os produtos salvos anteriormente antes para poder salvar os novos sem sobrescrever (caso nao tenha o backend)
+        for (let i = 0; i < listProdutosSalvosAnteriormente.length; i++) {
+            const element = listProdutosSalvosAnteriormente[i];
+            if (element.nomeReceita == produtoFinal.nomeReceita) {
+                alert('Erro ao salvar! Produto já existente.');
+                return;
+            }
+        }
+        for (let i = 0; i < listProdutosSalvosAnteriormente.length; i++) {
+            const element = listProdutosSalvosAnteriormente[i];
+            listaProdutosSalvosAtualizada.push(element);
+        }
+    }
+
+    listaProdutosSalvosAtualizada.push(produtoFinal);
+    localStorage.setItem('listaProdutosSalvos', JSON.stringify(listaProdutosSalvosAtualizada));
+
+    alert('Salvo com sucesso!');
 }
