@@ -53,6 +53,11 @@ app.MapControllerRoute(
     defaults: new { controller = "Usuario", action = "Index" });
 
 app.MapControllerRoute(
+    name: "SobreNos",
+    pattern: "SobreNos",
+    defaults: new { controller = "SobreNos", action = "Index" });
+
+app.MapControllerRoute(
     name: "ItensCadastrados",
     pattern: "ItensCadastrados",
     defaults: new { controller = "ItensCadastrados", action = "Index" });
