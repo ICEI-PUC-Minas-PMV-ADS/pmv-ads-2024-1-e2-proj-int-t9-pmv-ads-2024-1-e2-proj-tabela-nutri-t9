@@ -1,0 +1,30 @@
+message: Please cite this software using these metadata.
+title: Projeto NutriGenius
+authors:
+  - family-names: Wagner Silveira e Silva
+    given-names: Jefferson
+  - family-names: Berto Rosa
+    given-names: Julia
+  - family-names: Miranda Benício
+    given-names: Helbert
+  - family-names: Taylor C. Bittencourt
+    given-names: Aldrin
+  - family-names: Augusto L. dos Santos
+    given-names: Cesar 
+  - family-names: César S. dos Santos
+    given-names: Luan
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Paiva Tizzo
+    given-names: Neil 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: 
+    given-names: 
+keywords:
+  - Projeto 
+  - Integração
+  - NutriGenius
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t9-pmv-ads-2024-1-e2-proj-tabela-nutri-t9.git
+version: 1.0.0
+date-released: 2024-06-26
