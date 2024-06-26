@@ -1,5 +1,8 @@
-<!-- Views/Account/Login.cshtml -->
-@model YourNamespace.Models.User
+@{
+    Layout = "_Layout";
+}
+
+@model UsuarioModel
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -13,8 +16,8 @@
     <title>Login | NutriGenius</title>
 </head>
 <body>
-    <div id="" class="container d-flex justify-content-center align-items-center min-vh-100">
-        <div id="" class="row border rounded-5 p-3 bg-white shadow box-area quadrado">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row border rounded-5 p-3 bg-white shadow box-area quadrado">
             <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #779E39;">
                 <div class="featured-image mb-3">
                     <img src="~/Content/Nutri-gif.gif" class="img-fluid" style="width: 250px;">
@@ -36,30 +39,21 @@
                             @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
                         </div>
                         <div class="input-group mb-1">
-                            @Html.PasswordFor(m => m.Password, new { @class = "form-control form-control-lg bg-light fs-6", @placeholder = "Digite sua senha" })
-                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                            @Html.PasswordFor(m => m.Senha, new { @class = "form-control form-control-lg bg-light fs-6", @placeholder = "Digite sua senha" })
+                            @Html.ValidationMessageFor(m => m.Senha, "", new { @class = "text-danger" })
                         </div>
-                        <div class="input-group mb-5 d-flex justify-content-between">
-                            <div class="form-check">
-                                @Html.CheckBoxFor(m => m.RememberMe, new { @class = "form-check-input", @id = "formCheck" })
-                                @Html.LabelFor(m => m.RememberMe, new { @class = "form-check-label text-secondary" })
-                            </div>
+/*                        <div class="input-group mb-5 d-flex justify-content-between">
+                            <!-- Remover RememberMe -->
                             <div class="forgot">
                                 <small><a href="#">Esqueceu sua senha?</a></small>
                             </div>
-                        </div>
+                        </div> */
                         <div class="input-group mb-3">
                             <button type="submit" class="btn btn-lg btn-primary w-100 fs-6" style="background: #779E39">Login</button>
                         </div>
                     }
-                    <div class="input-group mb-3">
-                        <button class="btn btn-lg btn-light w-100 fs-6">
-                            <img src="~/Content/images/google.png" style="width:20px" class="me-2">
-                            <small>Sign In with Google</small>
-                        </button>
-                    </div>
                     <div class="row">
-                        <small>Você não tem conta? <a href="#">Crie sua conta</a></small>
+                        <small>Você não tem conta? <a href="/Usuario">Crie sua conta</a></small>
                     </div>
                 </div>
             </div>

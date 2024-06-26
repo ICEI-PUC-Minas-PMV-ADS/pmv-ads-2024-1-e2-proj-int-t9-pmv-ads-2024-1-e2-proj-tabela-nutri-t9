@@ -24,8 +24,8 @@ h2 {
 }
 
 .infoNutri {
-  height: auto;
   width: 80px;
+  height: 20px;
   text-align: center;
 }
 
@@ -75,10 +75,14 @@ select {
   margin-bottom: 90px;
 }
 
+.alergicos {
+  width: 600px;
+  height: 260px;
+}
+
 .modoPreparo {
   width: 600px;
-  height: 530px;
-
+  height: 260px;
 }
 
 .conservacao {
@@ -88,8 +92,29 @@ select {
 
 textarea {
   width: 600px;
-  height: 415px;
-  padding: 10px;
+  height: 180px;
   font-family: Arial, sans-serif;
   font-size: 14px;
+  text-align: justify;
+}
+
+.conservacaoRelatorio table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.conservacaoRelatorio th,
+.conservacaoRelatorio td {
+  border: 1px solid black;
+  text-align: initial;
+  padding: 8px;
+}
+
+.conservacaoRelatorio th {
+  background-color: #f2f2f2;
+}
+
+.observacaoRelatorio {
+  text-align: justify;
 }

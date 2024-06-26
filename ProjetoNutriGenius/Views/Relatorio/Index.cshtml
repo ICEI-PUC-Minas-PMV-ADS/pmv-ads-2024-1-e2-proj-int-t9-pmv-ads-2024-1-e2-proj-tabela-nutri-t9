@@ -8,11 +8,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatório</title>
-
-    <link rel="stylesheet" href="../Tabela Nutricional/tabelaNutricional.css">
     <link rel="stylesheet" href="~/css/Shared/_Layout.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/relatorio.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/tabelaNutri.css" asp-append-version="true" />
+    <title>Relatório</title>
 </head>
 
 <body>
@@ -31,9 +30,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Produto Acabado</td>
-                        <td>Coxinha de Frango com Requeijão</td>
-                        <td>150 g</td>
+                        <td id='tipoMP'>Produto Acabado</td>
+                        <td id='nomeReceita'>Coxinha de Frango com Requeijão</td>
+                        <td id='porcao'>150 g</td>
                     </tr>
                 </tbody>
             </table>
@@ -41,12 +40,12 @@
 
         <section class="ingredientesRelatorio">
             <h3>1. Ingredientes</h3>
-            <p>Peito de frango, água, requeijão, farinha de trigo enriquecida com ferro e ácido fólico, farinha de
+            <p id='ingredientes'>Peito de frango, água, requeijão, farinha de trigo enriquecida com ferro e ácido fólico, farinha de
                 rosca, óleo de soja refinado, colorau, cebola, sal, caldo de galinha, cebolinha, ligante, alho, vinagre,
                 pimenta do reino preta e realçador de sabor (glutamato monossódico).
         </section>
 
-        <section class="alergicosRelatorio">
+        <section class="alergicosRelatorio" id='alergicosRelatorio'>
             CONTÉM GLÚTEN. ALÉRGICOS: CONTÉM DERIVADOS DE TRIGO, LEITE E SOJA. PODE CONTER AVEIA, CRUSTÁCEOS (CAMARÃO),
             OVOS E PEIXES. CONTÉM LACTOSE.</p>
         </section>
@@ -55,7 +54,7 @@
 
         <section class="preparoRelatorio">
             <h3>2. Modo de Preparo</h3>
-            <p>Forno Convencional: Retire o produto do congelador. Descongele em temperatura resfriada (0°C a +4°C).
+            <p id='preparoRelatorio'>Forno Convencional: Retire o produto do congelador. Descongele em temperatura resfriada (0°C a +4°C).
                 Preaqueça o forno a 160ºC. Coloque os salgados em uma assadeira e leve ao forno para aquecer por 15 a 20
                 minutos a 160°C. O tempo de preparo pode variar de acordo com o modelo do equipamento utilizado.</p>
         </section>
@@ -99,8 +98,10 @@
                     Após descongelado, não congelar o produto novamente.</p>
             </div>
         </section>
+        
 
     </main>
+    <br><br><br><br>
 
     <script src="~/js/relatorio.js" asp-append-version="true"></script>
 
