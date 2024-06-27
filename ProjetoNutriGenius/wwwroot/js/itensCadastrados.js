@@ -20,6 +20,22 @@ function printItensCadastrados(e) {
   print((window.location.href = "/Relatorio"));
 };
 
+function deletarReceita(e) {
+  console.log(e.parentElement);
+  let paiElement = e.parentElement;
+  let nomeReceita = paiElement.querySelector('#nomesMpFiltro').value;
+
+  let listProdutosSalvos = JSON.parse(localStorage.getItem('listaProdutosSalvos'));
+  let listaAtualizada = [];
+  listProdutosSalvos.forEach(element => {
+    if(element.nomeReceita != nomeReceita)
+      listaAtualizada.push(element);
+  });
+
+  localStorage.setItem('listaProdutosSalvos', JSON.stringify(listaAtualizada));
+  location.reload();
+};
+
 
 function carregarProdutos() {
   let produtosSalvos = JSON.parse(localStorage.getItem('listaProdutosSalvos'));
@@ -30,8 +46,8 @@ function carregarProdutos() {
     const produtoSalvo = produtosSalvos[i];
     let novoItem = `
     <div class="material-item">
-        <button type="button" id="add-btn" onclick="addMateria()">Editar</button>
-        <button type="button" id="add-btn" onclick="printItensCadastrados(this)">Imprimir</button>
+        <button type="button" id="add-btn" onclick="deletarReceita(this)">Excluir</button>
+        <button type="button" id="add-btn" onclick="printItensCadastrados(this)">Abrir</button>
 
         <input value="${produtoSalvo.nomeReceita}" type="text" name="nomesMpFiltro" id="nomesMpFiltro" class="nomeMP"
             placeholder="Receita Cadastrada" disabled>
@@ -58,3 +74,4 @@ function carregarProdutos() {
     tabelaFake.innerHTML += novoItem;
   }
 }
+

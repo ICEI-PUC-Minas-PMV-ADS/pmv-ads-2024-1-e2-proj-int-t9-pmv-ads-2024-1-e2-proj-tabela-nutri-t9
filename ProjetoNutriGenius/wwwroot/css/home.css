@@ -29,10 +29,14 @@ section p {
 }
 
 .quadrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 250px;
     height: 100px;
     background-color: #E5AB7E;
     margin-top: 25px;
+    font-weight: bold
 
 }
 
